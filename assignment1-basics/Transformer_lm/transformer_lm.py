@@ -25,11 +25,13 @@ class Transformer_lm(nn.Module):
         #lm_head(output_embedding)映射回词表，然后进softmax得到概率
         self.lm_head = Linear(d_model,vocab_size)
                     #"batch_size,seq_len"
-    def forward(self,token_ids:torch.Tensor)->torch.Tensor:
+    def forward(self,token_ids:torch.Tensor,return_hidden_states = False)->torch.Tensor:
         x = self.token_embeddings(token_ids)
+        hidden_states = [x]
 
         for block in self.layers:
             x = block(x)
+            hidden_states.append(x)
         
         x = self.ln_final(x)
 
@@ -38,5 +40,8 @@ class Transformer_lm(nn.Module):
         #logits = softmax(x,-1)#softmax指定维度
         "batch_size,seq_len,vocab_size"
 
-        return logits
+        if return_hidden_states:
+            return logits, hidden_states
+        else:
+            return logits
         
