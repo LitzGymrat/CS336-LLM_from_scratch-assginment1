@@ -152,7 +152,7 @@ def train():
                 })
             
         if (iter+1)% checkpoint_iters == 0:
-            save_dir = os.path.join("outputs", args.exp_name, "checkpoints")
+            save_dir = os.path.join("outputs", args.exp_name, "checkpoints_attn_res")
             os.makedirs(save_dir, exist_ok=True)
             save_path = os.path.join(save_dir, f"ckpt_step_{iter+1}.pt")
             
