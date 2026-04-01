@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 from Transformer_lm.transformer_lm import Transformer_lm as Base_Model
 from Transformer_lm.transformer_lm_attn_res import Transformer_lm as AttnRes_Model
 # 这里假设你把两个模型放在了不同的文件里，注意导入路径
@@ -53,8 +54,11 @@ def main():
     plt.xticks(layers)
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.legend()
-    plt.savefig("magnitude_comparison.png", dpi=300)
-    print("图表已保存为 magnitude_comparison.png！")
+    out_dir = Path(__file__).resolve().parent.parent / "docs" / "figures"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / "magnitude_comparison.png"
+    plt.savefig(out_path, dpi=300)
+    print(f"图表已保存为 {out_path}！")
 
 if __name__ == "__main__":
     main()
