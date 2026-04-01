@@ -17,3 +17,5 @@ config: {'batch_size': 64, 'learning_rate': 0.001, 'max_iters': 5000, '_wandb': 
 2026-04-01 14:33:10,506 INFO    MainThread:29555 [wandb_run.py:_redirect():2442] Wrapping output streams.
 2026-04-01 14:33:10,506 INFO    MainThread:29555 [wandb_run.py:_redirect():2465] Redirects installed.
 2026-04-01 14:33:10,508 INFO    MainThread:29555 [wandb_init.py:init():1082] run started, returning control to user process
+2026-04-01 14:50:35,300 INFO    wandb-AsyncioManager-main:29555 [service_client.py:_forward_responses():134] Reached EOF.
+2026-04-01 14:50:35,300 INFO    wandb-AsyncioManager-main:29555 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
