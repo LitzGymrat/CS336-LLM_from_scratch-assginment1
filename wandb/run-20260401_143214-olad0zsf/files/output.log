@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 165, in <module>
+    train()
+    ~~~~~^^
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 141, in train
+    valid_loss = estimate_loss(model,np_valid_data,batch_size,context_length,device,eval_iters=10)
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/.venv/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+TypeError: estimate_loss() got an unexpected keyword argument 'eval_iters'

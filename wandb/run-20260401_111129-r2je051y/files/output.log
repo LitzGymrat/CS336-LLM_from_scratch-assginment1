@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 151, in <module>
+    train()
+    ~~~~~^^
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 91, in train
+    loss = cross_entropy(logits,y)
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/cross_entropy_module/cross_entropy_loss.py", line 11, in cross_entropy
+    target_score = torch.gather(logits,dim=-1,index = targets.unsqueeze(-1))
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA_gather)

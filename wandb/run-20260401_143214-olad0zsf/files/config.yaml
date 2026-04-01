@@ -1,0 +1,69 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            ivfvr3sbgdpbclnqxdzze46c10wvzkrd:
+                args:
+                    - --exp_name
+                    - baseline
+                codePath: assignment1-basics/training_loop/training_loop.py
+                codePathLocal: assignment1-basics/training_loop/training_loop.py
+                cpu_count: 56
+                cpu_count_logical: 112
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "32212254720"
+                        used: "13728210944"
+                email: 1195660719@qq.com
+                executable: /root/autodl-tmp/CS336-LLM_from_scratch-assginment1/.venv/bin/python3
+                git:
+                    commit: 1d494c0933c880655e77f69011a551ae3658e8a8
+                    remote: https://github.com/LitzGymrat/CS336-LLM_from_scratch-assginment1.git
+                gpu: NVIDIA A800 80GB PCIe
+                gpu_count: 3
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800 80GB PCIe
+                      uuid: GPU-72832791-35c8-d84d-d79a-3f8dfa77397f
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800 80GB PCIe
+                      uuid: GPU-c47b538e-9207-19a4-6619-d22ead1a02e2
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800 80GB PCIe
+                      uuid: GPU-7e648b0a-618d-42dc-8dc7-5a1ea93f6941
+                host: autodl-container-1139448516-a6c8a2f1
+                memory:
+                    total: "1081304473600"
+                os: Linux-4.19.90-2107.6.0.0192.8.oe1.bclinux.x86_64-x86_64-with-glibc2.35
+                program: /root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py
+                python: CPython 3.13.12
+                root: /root/autodl-tmp/CS336-LLM_from_scratch-assginment1
+                startedAt: "2026-04-01T06:32:14.603769Z"
+                writerId: ivfvr3sbgdpbclnqxdzze46c10wvzkrd
+        m: []
+        python_version: 3.13.12
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.13.12
+            "5": 0.25.1
+            "12": 0.25.1
+            "13": linux-x86_64
+batch_size:
+    value: 64
+learning_rate:
+    value: 0.001
+max_iters:
+    value: 5000

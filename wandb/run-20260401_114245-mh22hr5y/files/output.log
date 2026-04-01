@@ -1,0 +1,32 @@
+第100轮:训练损失为3.558
+
+验证集损失为8.385
+
+第200轮:训练损失为3.017
+
+验证集损失为8.710
+
+第300轮:训练损失为2.783
+
+验证集损失为8.985
+
+第400轮:训练损失为2.647
+
+验证集损失为9.075
+
+第500轮:训练损失为2.441
+
+验证集损失为9.331
+
+第500轮，存档至outputs/baseline/checkpoints/ckpt_step_500.pt
+Traceback (most recent call last):
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 154, in <module>
+    train()
+    ~~~~~^^
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py", line 104, in train
+    optimizer.step()
+    ~~~~~~~~~~~~~~^^
+  File "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/.venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 512, in wrapper
+    @functools.wraps(func)
+
+KeyboardInterrupt

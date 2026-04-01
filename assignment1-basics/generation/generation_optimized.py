@@ -5,11 +5,11 @@ from softmax_module.softmax import softmax
 import torch
 
 def generate(prompt:str,max_tokens:int,temperature:float,top_p:float)->str:
-    vocab_path = "C:\\Users\\MilesZhu\\CS336-assignment1\\tinystory_train_vocab.pkl"
+    vocab_path = "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/data/tinystory_train_vocab.pkl"
     special_tokens = ["<|endoftext|>"]
     #指定权重路径
-    ckpt_path = ""
-    merges_path = "C:\\Users\\MilesZhu\\CS336-assignment1\\tinystory_train_merges.pkl"
+    ckpt_path = "../outputs/baseline/checkpoints/ckpt_step_5000.pt"
+    merges_path = "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/data/tinystory_train_merges.pkl"
             #直接从类建立：不需要()
     tokenizer = Tokenizer.from_files(vocab_path,merges_path,special_tokens)
     
@@ -66,7 +66,7 @@ def generate(prompt:str,max_tokens:int,temperature:float,top_p:float)->str:
             if temperature == 0:
                 next_token_id = torch.argmax(next_token_logit,dim = -1)
             else:
-                next_token_prob = softmax(next_token_logit / temperature,dim = -1)
+                next_token_prob = softmax(next_token_logit / temperature,-1)
                 #batch_size=1,vocab_size
                 #top_p采样
 

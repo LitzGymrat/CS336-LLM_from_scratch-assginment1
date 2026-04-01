@@ -1,0 +1,58 @@
+{
+  "os": "Linux-4.19.90-2107.6.0.0192.8.oe1.bclinux.x86_64-x86_64-with-glibc2.35",
+  "python": "CPython 3.13.12",
+  "startedAt": "2026-04-01T03:42:45.002483Z",
+  "args": [
+    "--exp_name",
+    "baseline"
+  ],
+  "program": "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/assignment1-basics/training_loop/training_loop.py",
+  "codePath": "assignment1-basics/training_loop/training_loop.py",
+  "codePathLocal": "assignment1-basics/training_loop/training_loop.py",
+  "git": {
+    "remote": "https://github.com/LitzGymrat/CS336-LLM_from_scratch-assginment1.git",
+    "commit": "1d494c0933c880655e77f69011a551ae3658e8a8"
+  },
+  "email": "1195660719@qq.com",
+  "root": "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1",
+  "host": "autodl-container-1139448516-a6c8a2f1",
+  "executable": "/root/autodl-tmp/CS336-LLM_from_scratch-assginment1/.venv/bin/python3",
+  "cpu_count": 56,
+  "cpu_count_logical": 112,
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "gpu_count": 3,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "13363572736"
+    }
+  },
+  "memory": {
+    "total": "1081304473600"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-72832791-35c8-d84d-d79a-3f8dfa77397f"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-c47b538e-9207-19a4-6619-d22ead1a02e2"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-7e648b0a-618d-42dc-8dc7-5a1ea93f6941"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "ljfqp7s69zhl79qp7rrrr6az52jh0tdv"
+}

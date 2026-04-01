@@ -1,3 +1,5 @@
+
+
 from Transformer_lm.transformer_lm import Transformer_lm
 from lr_schedule_module.cos_lr_schedule import lr_cosine_schedule
 from gradient_clipping_module.gradient_clipping import gradient_clipping
@@ -10,7 +12,20 @@ import torch
 import numpy as np
 import os
 import argparse
+import wandb
 
+@torch.no_grad()
+def estimate_loss(model, data, batch_size, context_length, device, eval_batches=10):
+    model.eval()
+    losses = torch.zeros(eval_batches)
+    for k in range(eval_batches):
+        X, Y = get_batch(data, batch_size, context_length, device)
+        X, Y = X.to(device), Y.to(device)
+        logits = model(X)
+        loss = cross_entropy(logits, Y)
+        losses[k] = loss.item()
+    model.train()
+    return losses.mean().item() # 返回这 10 个 batch 的平均 Loss
 
 def train():
     parser = argparse.ArgumentParser()
@@ -22,17 +37,16 @@ def train():
     parser.add_argument('--gpu', type=str, default='0')
     args = parser.parse_args()
 
-    # 核心：让 PyTorch 只看到你分配给它的那张卡！
-    os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
+    
 
     print(f"========== 开始实验: {args.exp_name} on GPU {args.gpu} ==========")
     #1.读取数据:使用memmap:不一次搬运完，需要用到的时候才搬运
 
 
     #先用硬编码。
-    np_train_data = np.load("assignment1-basics/tokenids_tinys_train.pkl",mmap_mode='r')
+    np_train_data = np.load("data/tokenids_tinys_train.npy",mmap_mode='r')
     #validation数据也读进来，用于eval评估
-    np_valid_data = np.load("assignment1-basics/tokenids_tinys_valid.pkl",mmap_mode='r')
+    np_valid_data = np.load("data/tokenids_tinys_valid.npy",mmap_mode='r')
 
 
 
@@ -49,7 +63,7 @@ def train():
     rope_theta=10000
     device='cuda' if torch.cuda.is_available() is True else 'cpu'
     dtype=torch.float32
-    batch_size = 32
+    batch_size = 64
     lr = 1e-3
     #学习率规划：先用经验值
     max_lr = 1e-3
@@ -68,6 +82,15 @@ def train():
     max_l2_norm = 1
     lr_schedule = True
     
+    wandb.init(
+        project="CS336-LLM-Project", # 项目名称（网页上显示的文件夹名）
+        name=args.exp_name,         # 这次实验的名字
+        config={
+            "batch_size": batch_size,
+            "learning_rate": lr,
+            "max_iters": max_iters
+        }
+    )
     #data = Data_loader(np_data,b_size = batch_size,s_len=context_length,device=device)
     #data:(input,target)
     #其中二者都是(batch_size,context_length)
@@ -75,7 +98,8 @@ def train():
     for iter in range(max_iters):
                     #每次迭代，取一次数据
         x,y = get_batch(np_train_data,b_size = batch_size,s_len=context_length,device=device)
-
+        x = x.to(device)
+        y = y.to(device)
         logits = model(x)
 
         loss = cross_entropy(logits,y)
@@ -98,6 +122,13 @@ def train():
             new_lr = lr_cosine_schedule(iter+1,max_lr,min_lr,warmup_iters,cosine_end_iters)
             for param_group in optimizer.param_groups:
                 param_group["lr"] = new_lr
+
+        current_lr = optimizer.param_groups[0]['lr']
+        wandb.log({
+            "train/loss": loss.item(),
+            "train/lr": current_lr,
+            "iter": iter
+        })
         
 
 
@@ -105,15 +136,23 @@ def train():
     #可选的学习率规划和梯度截断
 
     #5.打印日志，以及存档点
-        if iter % eval_iters == 0:
-            x_valid,y_valid = get_batch(np_valid_data,b_size = batch_size,s_len=context_length,device=device)
-            logits_valid = model(x_valid)
-            loss_valid = cross_entropy(logits_valid,y_valid)
-            #loss是张量类型，需要取出数值
-            print(f"第{iter+1}轮:训练损失为{loss.item():.3f}\n")
-            print(f"验证集损失为{loss_valid.item():.3f}\n")
-        if iter % checkpoint_iters == 0:
-            save_dir = "outputs/baseline/checkpoints"
+        if (iter+1) % eval_iters == 0:
+            #验证集评估：开启评估模式，关闭梯度记录
+                valid_loss = estimate_loss(model,np_valid_data,batch_size,context_length,device,eval_batches=10)
+                train_loss = estimate_loss(model,np_train_data,batch_size,context_length,device,eval_batches=10)
+                #loss是张量类型，需要取出数值
+                print(f"第{iter+1}轮:训练损失为{loss.item():.3f}\n")
+                print(f"验证集平均损失为{valid_loss:.3f}\n")
+                print(f"训练集平均损失为{train_loss:.3f}\n")
+                
+                wandb.log({
+                    "val/loss": valid_loss,
+                    "train/avg_loss":train_loss,
+                    "iter": iter+1
+                })
+            
+        if (iter+1)% checkpoint_iters == 0:
+            save_dir = os.path.join("outputs", args.exp_name, "checkpoints")
             os.makedirs(save_dir, exist_ok=True)
             save_path = os.path.join(save_dir, f"ckpt_step_{iter+1}.pt")
             
