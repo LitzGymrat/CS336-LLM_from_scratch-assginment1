@@ -1476,7 +1476,7 @@
       "published": "assignment1-basics-2026/docs/OWT_EXPERIMENTS.md",
       "sha256": "11e949ba9dcee1b892d878217944bb397acd663fae70d01b23d0f5997995ea98",
       "bytes": 4449,
-      "published_sha256": "11e949ba9dcee1b892d878217944bb397acd663fae70d01b23d0f5997995ea98"
+      "published_sha256": "b9adfd066458a963acfae723f8a53ef2b3e71f47264343f1033d0d276ab83caa"
     },
     {
       "source": "assignment1-basics/docs/SGD_LEARNING_RATE_TUNING.md",
@@ -7784,7 +7784,8 @@
     "assignment2-systems/uv.lock: local dependency directory",
     "assignment2-systems/run_memory_experiments.py: source archive directory",
     "root and A2 README documentation",
-    "root .gitignore publication exclusions"
+    "root .gitignore publication exclusions",
+    "OWT report completion note from existing metrics; no experiment re-run"
   ],
   "excluded": [
     "environments",

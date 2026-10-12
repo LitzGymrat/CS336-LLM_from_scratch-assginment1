@@ -6,7 +6,7 @@ A1 的原有实现与扩展保留在 `assignment1-basics/`。2026 版实现位�
 
 ## 已完成工作
 
-- A1：BPE tokenizer、causal attention、RoPE、RMSNorm、SwiGLU、AdamW、学习率调度、数据加载、checkpoint 与训练循环；TinyStories 训练和生成、模型消融。
+- A1：BPE tokenizer、causal attention、RoPE、RMSNorm、SwiGLU、AdamW、学习率调度、数据加载、checkpoint 与训练循环；TinyStories 与 OpenWebText 训练、文本生成及模型消融。
 - 原有扩展：KV-cache 解码与 Attention Residuals（AttnRes-lite）小规模实现及对照。
 - A2：CUDA 同步计时、预热实验、Nsight Systems/NVTX 分阶段分析、FP32/BF16 混合精度、显存快照、激活 checkpointing、`torch.compile` 对照。
 - FlashAttention：PyTorch 分块参考、Triton 融合前向、在线 softmax、因果掩码、FP32 累计与 logsumexp 保存；通过 PyTorch 重算实现自定义 backward，并提供 `torch.compile` 路径。
@@ -15,6 +15,12 @@ A1 的原有实现与扩展保留在 `assignment1-basics/`。2026 版实现位�
 当前 Triton kernel 用于独立算子测试与 benchmark，尚未替换完整语言模型的 attention。反向不是 Triton kernel。A2 的 DDP、optimizer sharding、FSDP 和并行分析暂缓；本项目不宣称完成全部课程要求。
 
 ## 关键结果
+
+### TinyStories 与 OpenWebText 训练
+
+已在两种语料上完成训练。OpenWebText 运行记录达到第 5,000 步，累计处理 40,960,000 token；最后一次固定验证 batch 评估 loss 为 4.7502。这个数值来自固定 4 个验证 batch，不能描述为整个验证集的平均 loss。
+
+[OWT 训练记录](assignment1-basics-2026/docs/OWT_EXPERIMENTS.md) · [实际指标](assignment1-basics-2026/data/lm_runs/owt-train-20260930-100005-189325/metrics.jsonl)
 
 ### Triton FlashAttention 前向
 
