@@ -1,0 +1,5 @@
+d_model=128, seq_len=8192
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+  首次前向+反向（含编译，如开启）：2268.803 ms
+  status=ok, forward=12.052209600806236 ms, backward=32.47336260974407 ms, phase=complete

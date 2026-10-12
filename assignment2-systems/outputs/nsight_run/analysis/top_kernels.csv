@@ -1,0 +1,6 @@
+model,seq_len,forward_top_kernel,forward_total_ms_10_steps,forward_calls_per_step,forward_kernel_percent,forward_backward_top_kernel,forward_backward_total_ms_10_steps,forward_backward_calls_per_step,forward_backward_kernel_percent,same_top_kernel
+small,256,ampere_sgemm_128x64_tn,74.317352,85.0,68.98121940734724,ampere_sgemm_128x64_tn,74.097323,85.0,21.740897452013545,True
+small,512,ampere_sgemm_128x64_tn,133.083038,84.0,55.34124513212546,ampere_sgemm_128x64_tn,135.533099,84.0,16.91487345703155,True
+small,1024,ampere_sgemm_128x64_tn,259.06747,84.0,34.95013703873861,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>, std::array<char *, (unsigned long)3>>(int, T2, T3)",278.848703,171.0,12.10012719794452,False
+medium,256,ampere_sgemm_128x64_tn,236.186602,169.0,74.7513199475664,ampere_sgemm_128x64_tn,238.069015,169.0,25.24431651769938,True
+medium,512,ampere_sgemm_128x64_tn,427.231777,168.0,56.372371454489894,ampere_sgemm_128x64_tn,430.420857,168.0,18.249794628739384,True

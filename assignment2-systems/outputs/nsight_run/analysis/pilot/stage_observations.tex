@@ -1,0 +1,8 @@
+\begin{tabular}{llrllrrrrrrrrl}
+\toprule
+config\_id & model & seq\_len & mode & scope & steps & gpu\_span\_mean\_ms & gpu\_span\_std\_ms & gpu\_kernel\_sum\_mean\_ms & matmul\_gpu\_mean\_ms & other\_kernel\_gpu\_mean\_ms & matmul\_percent & other\_kernel\_percent & source\_report \\
+\midrule
+C2 & small & 512 & forward & total & 10 & 26.335 & 0.279 & 24.048 & 15.724 & 8.324 & 65.385 & 34.615 & outputs/nsight\_run/profiles/small\_s512\_forward.nsys-rep \\
+C2 & small & 512 & forward & forward & 10 & 26.335 & 0.279 & 24.048 & 15.724 & 8.324 & 65.385 & 34.615 & outputs/nsight\_run/profiles/small\_s512\_forward.nsys-rep \\
+\bottomrule
+\end{tabular}

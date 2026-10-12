@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "profile_phase": "measurement",
+  "measurement_start_allocated_bytes": 17563648,
+  "peak_allocated_bytes": 30433280,
+  "peak_reserved_bytes": 44040192,
+  "snapshot_path": "outputs/pytorch_attention/smoke_cuda_d16_s256.pickle"
+}

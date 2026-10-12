@@ -1,0 +1,13 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=256, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='forward', output_prefix='outputs/nsight_run/profiles/small_s256_forward_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-5168.qdstrm'
+[1/1] [0%                          ] small_s256_forward.nsys-repProcessing events...
+[1/1] [0%                          ] small_s256_forward.nsys-rep[1/1] [6%                          ] small_s256_forward.nsys-rep[1/1] [12%                         ] small_s256_forward.nsys-rep[1/1] [============55%             ] small_s256_forward.nsys-rep[1/1] [========================99% ] small_s256_forward.nsys-rep[1/1] [==================75%       ] small_s256_forward.nsys-rep[1/1] [========================100%] small_s256_forward.nsys-rep[1/1] [========================100%] small_s256_forward.nsys-rep
+[total] 每次耗时(ms): [24.186335504055023, 20.202193409204483, 20.292457193136215, 20.152952522039413, 28.023507446050644, 20.150937139987946, 20.102210342884064, 20.510423928499222, 26.771042495965958, 20.337499678134918]
+平均耗时：22.073 ms
+标准差：3.079 ms
+peak_allocated_GiB=1.877
+peak_reserved_GiB=1.990
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/small_s256_forward.nsys-rep

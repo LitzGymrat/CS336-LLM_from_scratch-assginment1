@@ -1,0 +1,13 @@
+Namespace(d_model=1024, vocab_size=10000, d_ff=4096, num_layers=24, num_heads=16, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=256, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='train', output_prefix='outputs/nsight_run/profiles/medium_s256_train_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-9d3b.qdstrm'
+[1/1] [0%                          ] medium_s256_train.nsys-repProcessing events...
+[1/1] [0%                          ] medium_s256_train.nsys-rep[1/1] [6%                          ] medium_s256_train.nsys-rep[1/1] [12%                         ] medium_s256_train.nsys-rep[1/1] [============55%             ] medium_s256_train.nsys-rep[1/1] [========================99% ] medium_s256_train.nsys-rep[1/1] [====25%                     ] medium_s256_train.nsys-rep[1/1] [==19%                       ] medium_s256_train.nsys-rep[1/1] [=15%                        ] medium_s256_train.nsys-rep[1/1] [13%                         ] medium_s256_train.nsys-rep[1/1] [11%                         ] medium_s256_train.nsys-rep[1/1] [9%                          ] medium_s256_train.nsys-rep[1/1] [8%                          ] medium_s256_train.nsys-rep[1/1] [=17%                        ] medium_s256_train.nsys-rep[1/1] [====25%                     ] medium_s256_train.nsys-rep[1/1] [======34%                   ] medium_s256_train.nsys-rep[1/1] [========42%                 ] medium_s256_train.nsys-rep[1/1] [===========51%              ] medium_s256_train.nsys-rep[1/1] [=============59%            ] medium_s256_train.nsys-rep[1/1] [===============67%          ] medium_s256_train.nsys-rep[1/1] [==================75%       ] medium_s256_train.nsys-rep[1/1] [========================100%] medium_s256_train.nsys-rep[1/1] [========================100%] medium_s256_train.nsys-rep
+[total] 每次耗时(ms): [142.75119826197624, 150.8261263370514, 159.6202850341797, 153.8112871348858, 158.84914621710777, 157.18188509345055, 152.21072360873222, 147.07638695836067, 142.55359023809433, 153.47928926348686]
+平均耗时：151.836 ms
+标准差：6.123 ms
+peak_allocated_GiB=8.492
+peak_reserved_GiB=8.586
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/medium_s256_train.nsys-rep

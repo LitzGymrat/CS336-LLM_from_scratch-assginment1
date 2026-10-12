@@ -1,0 +1,5 @@
+Namespace(d_model=1024, vocab_size=10000, d_ff=4096, num_layers=24, num_heads=16, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=512, batch_size=4, device='cuda', precision='fp32', seed=0, use_compile=False, measure_first_call=True, lr=0.001, steps=10, warmup=5, mode='train', output_prefix='outputs/torch_compile/medium_train_eager', nvtx=False, memory_profile=False, inference=False)
+首次执行（含编译，如开启）：611.105 ms
+[total] 每次耗时(ms): [277.2500403225422, 277.825690805912, 277.5408588349819, 277.5358483195305, 277.48673781752586, 277.62164548039436, 277.58071199059486, 277.6776999235153, 277.9366970062256, 277.9070772230625]
+平均耗时：277.636 ms
+标准差：0.210 ms

@@ -1,0 +1,134 @@
+{
+  "kind": "OWT feasibility probe only; no trained checkpoint saved",
+  "config": {
+    "vocab_size": 32000,
+    "d_model": 512,
+    "num_heads": 16,
+    "d_ff": 1344,
+    "num_layers": 4,
+    "context_len": 256,
+    "rope_theta": 10000,
+    "device": "mps",
+    "dtype": "torch.float32",
+    "batch_size": 32,
+    "seed": 42
+  },
+  "train_tokens": 2727120452,
+  "valid_tokens": 66401098,
+  "parameter_count": 45224448,
+  "steps": [
+    {
+      "step": 1,
+      "seconds": 2.1893413749639876,
+      "loss": 10.394142150878906,
+      "lr": 0.0
+    },
+    {
+      "step": 2,
+      "seconds": 1.3680964579689316,
+      "loss": 10.392396926879883,
+      "lr": 1e-05
+    },
+    {
+      "step": 3,
+      "seconds": 1.3518277080147527,
+      "loss": 10.38783073425293,
+      "lr": 2e-05
+    },
+    {
+      "step": 4,
+      "seconds": 1.4415998330223374,
+      "loss": 10.382829666137695,
+      "lr": 3e-05
+    },
+    {
+      "step": 5,
+      "seconds": 1.2903664999757893,
+      "loss": 10.369562149047852,
+      "lr": 4e-05
+    },
+    {
+      "step": 6,
+      "seconds": 1.278598457982298,
+      "loss": 10.35501480102539,
+      "lr": 5e-05
+    },
+    {
+      "step": 7,
+      "seconds": 1.3421837920323014,
+      "loss": 10.334004402160645,
+      "lr": 6e-05
+    }
+  ],
+  "warmup_steps_excluded": 2,
+  "mean_step_seconds": 1.3409152582054957,
+  "tokens_per_second": 6109.260037031045,
+  "estimated_5000_step_hours": 1.8623823030631885,
+  "estimate_scope": "training steps only; excludes periodic evaluation and checkpoints; seven-step probe cannot predict sustained thermals",
+  "validation_losses": [
+    10.323938369750977,
+    10.318434715270996,
+    10.317325592041016,
+    10.31736946105957
+  ],
+  "memory_samples": [
+    {
+      "phase": "initialized",
+      "tensor_bytes": 181086208,
+      "driver_bytes": 1116454912
+    },
+    {
+      "phase": "after_loss",
+      "tensor_bytes": 5322582272,
+      "driver_bytes": 7486128128
+    },
+    {
+      "phase": "after_backward",
+      "tensor_bytes": 1553821952,
+      "driver_bytes": 8619196416
+    },
+    {
+      "phase": "after_update_1",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 8652816384
+    },
+    {
+      "phase": "after_update_2",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 8652816384
+    },
+    {
+      "phase": "after_update_3",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 8652816384
+    },
+    {
+      "phase": "after_update_4",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 9701392384
+    },
+    {
+      "phase": "after_update_5",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 9701392384
+    },
+    {
+      "phase": "after_update_6",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 9701392384
+    },
+    {
+      "phase": "after_update_7",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 9701392384
+    },
+    {
+      "phase": "after_validation",
+      "tensor_bytes": 2252210432,
+      "driver_bytes": 9701392384
+    }
+  ],
+  "memory_scope": "synchronized phase samples, not a true peak measurement; driver allocation includes cached memory",
+  "max_sampled_driver_bytes": 9701392384,
+  "process_max_rss_bytes": 3667165184
+}

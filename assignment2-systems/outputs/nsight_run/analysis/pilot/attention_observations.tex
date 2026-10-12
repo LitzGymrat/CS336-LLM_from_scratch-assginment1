@@ -1,0 +1,7 @@
+\begin{tabular}{llrrrrrlrrrrlrrl}
+\toprule
+config\_id & model & seq\_len & batch\_size & num\_layers & d\_model & num\_heads & scope & softmax\_gpu\_mean\_ms & msa\_matmul\_gpu\_mean\_ms & softmax\_flops & msa\_matmul\_flops & flops\_counting\_convention & time\_ratio\_softmax\_to\_matmul & flops\_ratio\_softmax\_to\_matmul & source\_report \\
+\midrule
+C2 & small & 512 & 4 & 12 & 768 & 12 & all MSA layers within one forward & 2.796 & 5.038 & 754384896 & 154618822656 & softmax: max compare/sub/exp/sum/div each 1 -> L*B*H*S*(5S-2); matmul: multiply+add 2 & 0.555 & 0.005 & outputs/nsight\_run/profiles/small\_s512\_forward.nsys-rep \\
+\bottomrule
+\end{tabular}

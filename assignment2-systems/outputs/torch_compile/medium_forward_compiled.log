@@ -1,0 +1,7 @@
+Namespace(d_model=1024, vocab_size=10000, d_ff=4096, num_layers=24, num_heads=16, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=512, batch_size=4, device='cuda', precision='fp32', seed=0, use_compile=True, measure_first_call=True, lr=0.001, steps=10, warmup=5, mode='forward', output_prefix='outputs/torch_compile/medium_forward_compiled', nvtx=False, memory_profile=False, inference=False)
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+首次执行（含编译，如开启）：47741.008 ms
+[total] 每次耗时(ms): [57.69297480583191, 57.5747974216938, 57.52798542380333, 57.6358325779438, 57.601526379585266, 57.592857629060745, 57.73278325796127, 57.6532818377018, 57.6494075357914, 57.55129083991051]
+平均耗时：57.621 ms
+标准差：0.064 ms

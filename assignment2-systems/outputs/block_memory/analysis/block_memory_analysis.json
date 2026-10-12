@@ -1,0 +1,722 @@
+{
+  "config": {
+    "d_model": 768,
+    "d_ff": 3072,
+    "num_heads": 12,
+    "batch_size": 4,
+    "context_len": 1024,
+    "rope_theta": 10000.0,
+    "warmup": 1,
+    "seed": 0,
+    "output_prefix": "/root/autodl-tmp/cs336/assignment2-systems/outputs/block_memory/small_b4_s1024_fp32"
+  },
+  "marker_time_ns": {
+    "before_forward": 4005655372,
+    "after_forward": 4033670789,
+    "after_backward": 4126021615
+  },
+  "marker_memory_bytes": {
+    "before_forward": 97263616,
+    "after_forward": 879599616,
+    "after_backward": 160184320
+  },
+  "stage_ranges_ns": {
+    "block_measurement": [
+      4005647187,
+      4126023585
+    ],
+    "block_forward": [
+      4005662698,
+      4033659960
+    ],
+    "block_backward": [
+      4033680596,
+      4126000827
+    ]
+  },
+  "stage_ms": {
+    "block_measurement": 120.376398,
+    "block_forward": 27.997262,
+    "block_backward": 92.320231
+  },
+  "saved_allocation_count": 25,
+  "saved_bytes": 769753088,
+  "output_bytes": 12582912,
+  "final_gradient_allocation_count": 10,
+  "inferred_gradient_bytes": 50337792,
+  "parameter_gradient_bytes": 37754880,
+  "input_gradient_bytes": 12582912,
+  "forward_sequence_count": 175,
+  "backward_sequence_count": 175,
+  "operator_groups": [
+    {
+      "operator": "aten::div",
+      "saved_bytes": 226492416,
+      "saved_mib": 216.0,
+      "percent": 29.424034736707675,
+      "allocation_count": 3
+    },
+    {
+      "operator": "aten::exp",
+      "saved_bytes": 201326592,
+      "saved_mib": 192.0,
+      "percent": 26.154697543740156,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::mul",
+      "saved_bytes": 125829120,
+      "saved_mib": 120.0,
+      "percent": 16.346685964837597,
+      "allocation_count": 4
+    },
+    {
+      "operator": "aten::bmm",
+      "saved_bytes": 100663296,
+      "saved_mib": 96.0,
+      "percent": 13.077348771870078,
+      "allocation_count": 2
+    },
+    {
+      "operator": "aten::clone",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 4
+    },
+    {
+      "operator": "aten::sigmoid",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::add",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::bitwise_not",
+      "saved_bytes": 1048576,
+      "saved_mib": 1.0,
+      "percent": 0.1362223830403133,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::index",
+      "saved_bytes": 524288,
+      "saved_mib": 0.5,
+      "percent": 0.06811119152015666,
+      "allocation_count": 4
+    },
+    {
+      "operator": "aten::max",
+      "saved_bytes": 393216,
+      "saved_mib": 0.375,
+      "percent": 0.05108339364011749,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::sum",
+      "saved_bytes": 196608,
+      "saved_mib": 0.1875,
+      "percent": 0.025541696820058746,
+      "allocation_count": 1
+    },
+    {
+      "operator": "aten::sqrt",
+      "saved_bytes": 32768,
+      "saved_mib": 0.03125,
+      "percent": 0.004256949470009791,
+      "allocation_count": 2
+    }
+  ],
+  "operator_instances": [
+    {
+      "nvtx_label": "aten::exp, seq = 267, op_id = 205, sizes = [[4, 12, 1024, 1024]], input_op_ids = [(204,0)]",
+      "saved_bytes": 201326592,
+      "saved_mib": 192.0,
+      "percent": 26.154697543740156,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::div, seq = 269, op_id = 207, sizes = [[4, 12, 1024, 1024], [4, 12, 1024, 1]], input_op_ids = [(205,0), (206,0)]",
+      "saved_bytes": 201326592,
+      "saved_mib": 192.0,
+      "percent": 26.154697543740156,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::bmm, seq = 316, op_id = 299, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(293,0), (297,0)]",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::sigmoid, seq = 320, op_id = 304, sizes = [[4, 1024, 3072]], input_op_ids = [(280,0)]",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::mul, seq = 321, op_id = 305, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(280,0), (304,0)]",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::bmm, seq = 331, op_id = 325, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(319,0), (323,0)]",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::mul, seq = 335, op_id = 330, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(305,0), (306,0)]",
+      "saved_bytes": 50331648,
+      "saved_mib": 48.0,
+      "percent": 6.538674385935039,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::mul, seq = 180, op_id = 11, sizes = [[4, 1024, 768], [768]], input_op_ids = [(4,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::div, seq = 181, op_id = 12, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(11,0), (10,0)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::clone, seq = 237, op_id = 126, sizes = [[4, 12, 1024, 32, 2], []], input_op_ids = [(123,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::clone, seq = 249, op_id = 156, sizes = [[4, 12, 1024, 32, 2], []], input_op_ids = [(153,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::clone, seq = 277, op_id = 224, sizes = [[4, 12, 1024, 64, 1], []], input_op_ids = [(221,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::clone, seq = 284, op_id = 237, sizes = [[4, 1024, 12, 64], []], input_op_ids = [(234,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::add, seq = 299, op_id = 266, sizes = [[4, 1024, 768], [4, 1024, 768], []], input_op_ids = [(4,0), (242,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::mul, seq = 305, op_id = 277, sizes = [[4, 1024, 768], [768]], input_op_ids = [(270,0), (0,-1)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::div, seq = 306, op_id = 278, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(277,0), (276,0)]",
+      "saved_bytes": 12582912,
+      "saved_mib": 12.0,
+      "percent": 1.6346685964837597,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::bitwise_not, seq = 264, op_id = 190, sizes = [[1024, 1024]], input_op_ids = [(166,0)]",
+      "saved_bytes": 1048576,
+      "saved_mib": 1.0,
+      "percent": 0.1362223830403133,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::max, seq = 265, op_id = 203, sizes = [[4, 12, 1024, 1024], [], []], input_op_ids = [(191,0), (0,-1), (0,-1)]",
+      "saved_bytes": 393216,
+      "saved_mib": 0.375,
+      "percent": 0.05108339364011749,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::sum, seq = 268, op_id = 206, sizes = [[4, 12, 1024, 1024], [], [], []], input_op_ids = [(205,0), (0,-1), (0,-1), (0,-1)]",
+      "saved_bytes": 196608,
+      "saved_mib": 0.1875,
+      "percent": 0.025541696820058746,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::index, seq = 229, op_id = 106, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "saved_bytes": 131072,
+      "saved_mib": 0.125,
+      "percent": 0.017027797880039164,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::index, seq = 229, op_id = 110, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "saved_bytes": 131072,
+      "saved_mib": 0.125,
+      "percent": 0.017027797880039164,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::index, seq = 241, op_id = 136, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "saved_bytes": 131072,
+      "saved_mib": 0.125,
+      "percent": 0.017027797880039164,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::index, seq = 241, op_id = 140, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "saved_bytes": 131072,
+      "saved_mib": 0.125,
+      "percent": 0.017027797880039164,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::sqrt, seq = 179, op_id = 10, sizes = [[4, 1024, 1]], input_op_ids = [(9,0)]",
+      "saved_bytes": 16384,
+      "saved_mib": 0.015625,
+      "percent": 0.0021284747350048955,
+      "allocation_count": 1
+    },
+    {
+      "nvtx_label": "aten::sqrt, seq = 304, op_id = 276, sizes = [[4, 1024, 1]], input_op_ids = [(275,0)]",
+      "saved_bytes": 16384,
+      "saved_mib": 0.015625,
+      "percent": 0.0021284747350048955,
+      "allocation_count": 1
+    }
+  ],
+  "saved_lifetimes": [
+    {
+      "start": 4006511047,
+      "end": 4124391056,
+      "address": 140278979631104,
+      "bytes": 16384,
+      "alloc_correlation": 529342,
+      "free_correlation": 532346,
+      "allocation_label": "aten::sqrt, seq = 179, op_id = 10, sizes = [[4, 1024, 1]], input_op_ids = [(9,0)]",
+      "operator_label": "aten::sqrt, seq = 179, op_id = 10, sizes = [[4, 1024, 1]], input_op_ids = [(9,0)]",
+      "operator": "aten::sqrt",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4006650012,
+      "end": 4122463459,
+      "address": 140277960409088,
+      "bytes": 12582912,
+      "alloc_correlation": 529354,
+      "free_correlation": 532253,
+      "allocation_label": "aten::mul, seq = 180, op_id = 11, sizes = [[4, 1024, 768], [768]], input_op_ids = [(4,0), (0,-1)]",
+      "operator_label": "aten::mul, seq = 180, op_id = 11, sizes = [[4, 1024, 768], [768]], input_op_ids = [(4,0), (0,-1)]",
+      "operator": "aten::mul",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4006762506,
+      "end": 4117592557,
+      "address": 140277972992000,
+      "bytes": 12582912,
+      "alloc_correlation": 529365,
+      "free_correlation": 532107,
+      "allocation_label": "aten::div, seq = 181, op_id = 12, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(11,0), (10,0)]",
+      "operator_label": "aten::div, seq = 181, op_id = 12, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(11,0), (10,0)]",
+      "operator": "aten::div",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4008004222,
+      "end": 4111265578,
+      "address": 140278981400576,
+      "bytes": 131072,
+      "alloc_correlation": 529453,
+      "free_correlation": 531660,
+      "allocation_label": "aten::index, seq = 229, op_id = 106, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator_label": "aten::index, seq = 229, op_id = 106, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator": "aten::index",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4008051317,
+      "end": 4110910125,
+      "address": 140278981531648,
+      "bytes": 131072,
+      "alloc_correlation": 529468,
+      "free_correlation": 531633,
+      "allocation_label": "aten::index, seq = 229, op_id = 110, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator_label": "aten::index, seq = 229, op_id = 110, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator": "aten::index",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4009516861,
+      "end": 4093745372,
+      "address": 140278967042048,
+      "bytes": 12582912,
+      "alloc_correlation": 529564,
+      "free_correlation": 531332,
+      "allocation_label": "aten::empty, op_id = 128, sizes = [[], [], [], [], [], []], input_op_ids = [(0,-1), (0,-1), (0,-1), (0,-1), (0,-1), (0,-1)]",
+      "operator_label": "aten::clone, seq = 237, op_id = 126, sizes = [[4, 12, 1024, 32, 2], []], input_op_ids = [(123,0), (0,-1)]",
+      "operator": "aten::clone",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4010366377,
+      "end": 4103259213,
+      "address": 140278980155392,
+      "bytes": 131072,
+      "alloc_correlation": 529590,
+      "free_correlation": 531473,
+      "allocation_label": "aten::index, seq = 241, op_id = 136, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator_label": "aten::index, seq = 241, op_id = 136, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator": "aten::index",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4010414983,
+      "end": 4100104884,
+      "address": 140278980286464,
+      "bytes": 131072,
+      "alloc_correlation": 529605,
+      "free_correlation": 531446,
+      "allocation_label": "aten::index, seq = 241, op_id = 140, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator_label": "aten::index, seq = 241, op_id = 140, sizes = [[1024, 32], [1024]], input_op_ids = [(0,-1), (98,0)]",
+      "operator": "aten::index",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4011784982,
+      "end": 4092840381,
+      "address": 140278736355328,
+      "bytes": 12582912,
+      "alloc_correlation": 529701,
+      "free_correlation": 531331,
+      "allocation_label": "aten::empty, op_id = 158, sizes = [[], [], [], [], [], []], input_op_ids = [(0,-1), (0,-1), (0,-1), (0,-1), (0,-1), (0,-1)]",
+      "operator_label": "aten::clone, seq = 249, op_id = 156, sizes = [[4, 12, 1024, 32, 2], []], input_op_ids = [(153,0), (0,-1)]",
+      "operator": "aten::clone",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4014123204,
+      "end": 4084364838,
+      "address": 140278022275072,
+      "bytes": 1048576,
+      "alloc_correlation": 529788,
+      "free_correlation": 531267,
+      "allocation_label": "aten::bitwise_not, seq = 264, op_id = 190, sizes = [[1024, 1024]], input_op_ids = [(166,0)]",
+      "operator_label": "aten::bitwise_not, seq = 264, op_id = 190, sizes = [[1024, 1024]], input_op_ids = [(166,0)]",
+      "operator": "aten::bitwise_not",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4017477006,
+      "end": 4081253694,
+      "address": 140278980614144,
+      "bytes": 393216,
+      "alloc_correlation": 529826,
+      "free_correlation": 531232,
+      "allocation_label": "aten::max, seq = 265, op_id = 203, sizes = [[4, 12, 1024, 1024], [], []], input_op_ids = [(191,0), (0,-1), (0,-1)]",
+      "operator_label": "aten::max, seq = 265, op_id = 203, sizes = [[4, 12, 1024, 1024], [], []], input_op_ids = [(191,0), (0,-1), (0,-1)]",
+      "operator": "aten::max",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4020420209,
+      "end": 4077018853,
+      "address": 140276853112832,
+      "bytes": 201326592,
+      "alloc_correlation": 529853,
+      "free_correlation": 531172,
+      "allocation_label": "aten::exp, seq = 267, op_id = 205, sizes = [[4, 12, 1024, 1024]], input_op_ids = [(204,0)]",
+      "operator_label": "aten::exp, seq = 267, op_id = 205, sizes = [[4, 12, 1024, 1024]], input_op_ids = [(204,0)]",
+      "operator": "aten::exp",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4020462670,
+      "end": 4073817173,
+      "address": 140278980417536,
+      "bytes": 196608,
+      "alloc_correlation": 529864,
+      "free_correlation": 531141,
+      "allocation_label": "aten::sum, seq = 268, op_id = 206, sizes = [[4, 12, 1024, 1024], [], [], []], input_op_ids = [(205,0), (0,-1), (0,-1), (0,-1)]",
+      "operator_label": "aten::sum, seq = 268, op_id = 206, sizes = [[4, 12, 1024, 1024], [], [], []], input_op_ids = [(205,0), (0,-1), (0,-1), (0,-1)]",
+      "operator": "aten::sum",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4021985372,
+      "end": 4059814942,
+      "address": 140276651786240,
+      "bytes": 201326592,
+      "alloc_correlation": 529879,
+      "free_correlation": 531025,
+      "allocation_label": "aten::div, seq = 269, op_id = 207, sizes = [[4, 12, 1024, 1024], [4, 12, 1024, 1]], input_op_ids = [(205,0), (206,0)]",
+      "operator_label": "aten::div, seq = 269, op_id = 207, sizes = [[4, 12, 1024, 1024], [4, 12, 1024, 1]], input_op_ids = [(205,0), (206,0)]",
+      "operator": "aten::div",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4023684648,
+      "end": 4059524399,
+      "address": 140277985574912,
+      "bytes": 12582912,
+      "alloc_correlation": 529891,
+      "free_correlation": 531024,
+      "allocation_label": "aten::empty, op_id = 226, sizes = [[], [], [], [], [], []], input_op_ids = [(0,-1), (0,-1), (0,-1), (0,-1), (0,-1), (0,-1)]",
+      "operator_label": "aten::clone, seq = 277, op_id = 224, sizes = [[4, 12, 1024, 64, 1], []], input_op_ids = [(221,0), (0,-1)]",
+      "operator": "aten::clone",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4026847479,
+      "end": 4057836341,
+      "address": 140278723772416,
+      "bytes": 12582912,
+      "alloc_correlation": 529922,
+      "free_correlation": 530892,
+      "allocation_label": "aten::empty, op_id = 239, sizes = [[], [], [], [], [], []], input_op_ids = [(0,-1), (0,-1), (0,-1), (0,-1), (0,-1), (0,-1)]",
+      "operator_label": "aten::clone, seq = 284, op_id = 237, sizes = [[4, 1024, 12, 64], []], input_op_ids = [(234,0), (0,-1)]",
+      "operator": "aten::clone",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4030418523,
+      "end": 4056741237,
+      "address": 140277998157824,
+      "bytes": 12582912,
+      "alloc_correlation": 529959,
+      "free_correlation": 530822,
+      "allocation_label": "aten::add, seq = 299, op_id = 266, sizes = [[4, 1024, 768], [4, 1024, 768], []], input_op_ids = [(4,0), (242,0), (0,-1)]",
+      "operator_label": "aten::add, seq = 299, op_id = 266, sizes = [[4, 1024, 768], [4, 1024, 768], []], input_op_ids = [(4,0), (242,0), (0,-1)]",
+      "operator": "aten::add",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031008397,
+      "end": 4055571400,
+      "address": 140278979648512,
+      "bytes": 16384,
+      "alloc_correlation": 530010,
+      "free_correlation": 530755,
+      "allocation_label": "aten::sqrt, seq = 304, op_id = 276, sizes = [[4, 1024, 1]], input_op_ids = [(275,0)]",
+      "operator_label": "aten::sqrt, seq = 304, op_id = 276, sizes = [[4, 1024, 1]], input_op_ids = [(275,0)]",
+      "operator": "aten::sqrt",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031172108,
+      "end": 4053496540,
+      "address": 140278702800896,
+      "bytes": 12582912,
+      "alloc_correlation": 530022,
+      "free_correlation": 530657,
+      "allocation_label": "aten::mul, seq = 305, op_id = 277, sizes = [[4, 1024, 768], [768]], input_op_ids = [(270,0), (0,-1)]",
+      "operator_label": "aten::mul, seq = 305, op_id = 277, sizes = [[4, 1024, 768], [768]], input_op_ids = [(270,0), (0,-1)]",
+      "operator": "aten::mul",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031272645,
+      "end": 4049748658,
+      "address": 140278954459136,
+      "bytes": 12582912,
+      "alloc_correlation": 530033,
+      "free_correlation": 530505,
+      "allocation_label": "aten::div, seq = 306, op_id = 278, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(277,0), (276,0)]",
+      "operator_label": "aten::div, seq = 306, op_id = 278, sizes = [[4, 1024, 768], [4, 1024, 1]], input_op_ids = [(277,0), (276,0)]",
+      "operator": "aten::div",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031540295,
+      "end": 4043701667,
+      "address": 140278767812608,
+      "bytes": 50331648,
+      "alloc_correlation": 530044,
+      "free_correlation": 530420,
+      "allocation_label": "aten::bmm, seq = 316, op_id = 299, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(293,0), (297,0)]",
+      "operator_label": "aten::bmm, seq = 316, op_id = 299, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(293,0), (297,0)]",
+      "operator": "aten::bmm",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031704356,
+      "end": 4045876975,
+      "address": 140278818144256,
+      "bytes": 50331648,
+      "alloc_correlation": 530060,
+      "free_correlation": 530437,
+      "allocation_label": "aten::sigmoid, seq = 320, op_id = 304, sizes = [[4, 1024, 3072]], input_op_ids = [(280,0)]",
+      "operator_label": "aten::sigmoid, seq = 320, op_id = 304, sizes = [[4, 1024, 3072]], input_op_ids = [(280,0)]",
+      "operator": "aten::sigmoid",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4031807079,
+      "end": 4039154644,
+      "address": 140278868475904,
+      "bytes": 50331648,
+      "alloc_correlation": 530071,
+      "free_correlation": 530279,
+      "allocation_label": "aten::mul, seq = 321, op_id = 305, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(280,0), (304,0)]",
+      "operator_label": "aten::mul, seq = 321, op_id = 305, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(280,0), (304,0)]",
+      "operator": "aten::mul",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4032076736,
+      "end": 4038152720,
+      "address": 140277591310336,
+      "bytes": 50331648,
+      "alloc_correlation": 530082,
+      "free_correlation": 530278,
+      "allocation_label": "aten::bmm, seq = 331, op_id = 325, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(319,0), (323,0)]",
+      "operator_label": "aten::bmm, seq = 331, op_id = 325, sizes = [[1, 4096, 768], [1, 768, 3072]], input_op_ids = [(319,0), (323,0)]",
+      "operator": "aten::bmm",
+      "cuda_api": "cudaMalloc_v3020"
+    },
+    {
+      "start": 4032236134,
+      "end": 4035679895,
+      "address": 140277524201472,
+      "bytes": 50331648,
+      "alloc_correlation": 530098,
+      "free_correlation": 530194,
+      "allocation_label": "aten::mul, seq = 335, op_id = 330, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(305,0), (306,0)]",
+      "operator_label": "aten::mul, seq = 335, op_id = 330, sizes = [[4, 1024, 3072], [4, 1024, 3072]], input_op_ids = [(305,0), (306,0)]",
+      "operator": "aten::mul",
+      "cuda_api": "cudaMalloc_v3020"
+    }
+  ],
+  "output_lifetimes": [
+    {
+      "start": 4032598808,
+      "end": 4130600729,
+      "address": 140277641641984,
+      "bytes": 12582912,
+      "alloc_correlation": 530126,
+      "free_correlation": 532459
+    }
+  ],
+  "gradient_lifetimes": [
+    {
+      "start": 4036846115,
+      "end": 4127884070,
+      "address": 140277507424256,
+      "bytes": 9437184,
+      "alloc_correlation": 530238,
+      "free_correlation": 532441
+    },
+    {
+      "start": 4042903461,
+      "end": 4128389458,
+      "address": 140277389983744,
+      "bytes": 9437184,
+      "alloc_correlation": 530380,
+      "free_correlation": 532443
+    },
+    {
+      "start": 4051566497,
+      "end": 4128864112,
+      "address": 140277410955264,
+      "bytes": 9437184,
+      "alloc_correlation": 530565,
+      "free_correlation": 532445
+    },
+    {
+      "start": 4054122099,
+      "end": 4129336902,
+      "address": 140278981679104,
+      "bytes": 3072,
+      "alloc_correlation": 530687,
+      "free_correlation": 532447
+    },
+    {
+      "start": 4055348234,
+      "end": 4130216026,
+      "address": 140277421441024,
+      "bytes": 12582912,
+      "alloc_correlation": 530712,
+      "free_correlation": 532457
+    },
+    {
+      "start": 4058197665,
+      "end": 4130877743,
+      "address": 140277404663808,
+      "bytes": 2359296,
+      "alloc_correlation": 530936,
+      "free_correlation": 532460
+    },
+    {
+      "start": 4114037374,
+      "end": 4129368134,
+      "address": 140277446606848,
+      "bytes": 2359296,
+      "alloc_correlation": 531910,
+      "free_correlation": 532449
+    },
+    {
+      "start": 4115787482,
+      "end": 4129709775,
+      "address": 140277450801152,
+      "bytes": 2359296,
+      "alloc_correlation": 532038,
+      "free_correlation": 532451
+    },
+    {
+      "start": 4119324216,
+      "end": 4129953508,
+      "address": 140277517910016,
+      "bytes": 2359296,
+      "alloc_correlation": 532161,
+      "free_correlation": 532453
+    },
+    {
+      "start": 4123057054,
+      "end": 4130200984,
+      "address": 140278981682176,
+      "bytes": 3072,
+      "alloc_correlation": 532283,
+      "free_correlation": 532455
+    }
+  ],
+  "checks": {
+    "source_hashes_match": true,
+    "allocation_free_sizes_match": true,
+    "saved_sum_matches_memory_difference": true,
+    "gradient_sum_matches_tensor_bytes": true,
+    "backward_sequence_ids_match": true
+  },
+  "raw_sha256": {
+    "small_b4_s1024_fp32.command.json": "b1f0d94b1e95981fb3f7151f815895e5b94f2ea58d57166db5ffa923d1e836ff",
+    "small_b4_s1024_fp32.json": "09fcf6730ea4d59452f09c74e2a3a68f883ac8546bedaf53eb2b2ff1652fb670",
+    "small_b4_s1024_fp32.log": "f0ceca65bbe69f6320635b6e044807e9d55384c95a15cac39b28c39b4457068f",
+    "small_b4_s1024_fp32.nsys-rep": "161fc543a2dc53455d23cbe4ad6f4785c1ec8de48b96f56e1b7475b60399406f",
+    "small_b4_s1024_fp32.sqlite": "9d674c2f2fb6c47ea107884fb36cf659bcba20c92880e2cc60aaad46477d6de2"
+  }
+}

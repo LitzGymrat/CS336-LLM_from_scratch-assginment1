@@ -1,0 +1,8 @@
+{
+  "cs336_systems/flash_attention2_triton.py": "c6531679748c78e1155fdb5ace6ab784fb2c2a46ce1512985ab9091c199ccd88",
+  "cs336_systems/benchmark_flash_attention.py": "5ab05359a734e0feb73d7329006d9b9c8a0c3b4efa31b950746ea037c3800054",
+  "report_flash_attention.py": "5621b15046e234b6a303717216f4fbcdb506524d55ee6c398a5fcce905911283",
+  "docs/flash_attention_benchmark_report.md": "dd758ffdc74f459d15d36814ec8ffd1cd20ab8032f182bd2e1f4bb836209bb50",
+  "docs/figures/flash_attention_benchmark.png": "0f694577535e2801923dfe7d8ff0c2b49b16598af60eea959247fd90dec51542",
+  "docs/figures/flash_attention_benchmark.pdf": "3be7d878c212b7005c639f9a8fa157db54dcdbd6a4284229f3883c45ea9da1da"
+}

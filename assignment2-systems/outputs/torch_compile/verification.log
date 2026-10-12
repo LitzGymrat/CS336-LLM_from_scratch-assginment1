@@ -1,0 +1,8 @@
+开始核对：verify_attention
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/autograd/graph.py:869: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:335.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+{'case': 'attention_b8_s8192_d128', 'status': 'passed', 'output_max_abs_error': 7.82310962677002e-08, 'gradient_max_abs_errors': [1.564621925354004e-07, 1.564621925354004e-07, 6.705522537231445e-08]}
+开始核对：verify_transformer
+{'case': 'medium_b4_s512', 'status': 'passed', 'logits_max_abs_error': 3.0994415283203125e-06, 'loss_abs_error': 0.0, 'gradient_max_abs_error': 2.561137080192566e-09, 'parameter_tensors_checked': 219}

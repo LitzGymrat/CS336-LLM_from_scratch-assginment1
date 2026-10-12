@@ -1,0 +1,10 @@
+\begin{tabular}{rlrrrr}
+\toprule
+seq\_len & precision & forward\_allocated\_gib & forward\_reserved\_gib & train\_allocated\_gib & train\_reserved\_gib \\
+\midrule
+128 & fp32 & 0.518 & 0.572 & 2.191 & 2.418 \\
+128 & bf16 & 0.759 & 0.805 & 2.187 & 2.418 \\
+1024 & fp32 & 1.302 & 1.418 & 10.904 & 11.566 \\
+1024 & bf16 & 1.324 & 1.402 & 8.527 & 8.943 \\
+\bottomrule
+\end{tabular}

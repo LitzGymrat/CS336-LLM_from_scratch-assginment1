@@ -1,0 +1,8 @@
+
+tests/test_attention.py::test_flash_forward_pass_triton[False] PASSED
+tests/test_attention.py::test_flash_forward_pass_triton[True] PASSED
+tests/test_attention.py::test_flash_backward_triton[False] PASSED
+tests/test_attention.py::test_flash_backward_triton[True] PASSED
+
+- generated xml file: /root/autodl-tmp/cs336/assignment2-systems/outputs/flash_attention/final/pytest.xml -
+======================= 4 passed, 2 deselected in 4.42s ========================

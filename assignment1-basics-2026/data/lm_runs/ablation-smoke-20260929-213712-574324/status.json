@@ -1,0 +1,104 @@
+{
+  "pid": 85565,
+  "state": "finished",
+  "experiments": [
+    {
+      "name": "no-rmsnorm-lr1e-3",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:14.444182+08:00",
+      "pid": 85579,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:18.448877+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 1.039397332991939,
+        "train_loss": 17.940750122070312,
+        "valid_loss": 23.569887161254883,
+        "lr": 0.0001,
+        "tokens_seen": 192
+      }
+    },
+    {
+      "name": "post-norm",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:19.093139+08:00",
+      "pid": 85618,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:22.110864+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 0.5583608750021085,
+        "train_loss": 8.91905403137207,
+        "valid_loss": 9.03687572479248,
+        "lr": 0.0001,
+        "tokens_seen": 192
+      }
+    },
+    {
+      "name": "no-rope",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:22.761105+08:00",
+      "pid": 85648,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:25.076148+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 0.44803099997807294,
+        "train_loss": 8.912389755249023,
+        "valid_loss": 9.018485069274902,
+        "lr": 0.0001,
+        "tokens_seen": 192
+      }
+    },
+    {
+      "name": "silu",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:25.728186+08:00",
+      "pid": 85673,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:28.721628+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 0.5575175000121817,
+        "train_loss": 8.668150901794434,
+        "valid_loss": 8.760602951049805,
+        "lr": 0.0001,
+        "tokens_seen": 192
+      }
+    },
+    {
+      "name": "no-rmsnorm-lr3e-4",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:29.374803+08:00",
+      "pid": 85697,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:32.263484+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 0.4554448749986477,
+        "train_loss": 20.150936126708984,
+        "valid_loss": 24.918502807617188,
+        "lr": 2.9999999999999997e-05,
+        "tokens_seen": 192
+      }
+    },
+    {
+      "name": "no-rmsnorm-lr1e-4",
+      "state": "completed",
+      "started_at": "2026-09-29T21:37:32.930468+08:00",
+      "pid": 85718,
+      "returncode": 0,
+      "finished_at": "2026-09-29T21:37:35.820906+08:00",
+      "last_metrics": {
+        "step": 3,
+        "wall_seconds": 0.4589967079809867,
+        "train_loss": 21.782764434814453,
+        "valid_loss": 26.08517837524414,
+        "lr": 1e-05,
+        "tokens_seen": 192
+      }
+    }
+  ],
+  "report_exit_code": 0,
+  "finished_at": "2026-09-29T21:37:36.497415+08:00"
+}

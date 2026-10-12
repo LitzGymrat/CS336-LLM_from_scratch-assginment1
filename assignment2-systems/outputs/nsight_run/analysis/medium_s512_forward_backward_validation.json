@@ -1,0 +1,25 @@
+{
+  "profile": "outputs/nsight_run/profiles/medium_s512_forward_backward.nsys-rep",
+  "nvtx_counts": {
+    "attention": 240,
+    "attention_softmax": 240,
+    "backward": 10,
+    "cub::DeviceRadixSort": 10,
+    "forward": 10,
+    "loss": 10,
+    "measurement": 1,
+    "step": 10
+  },
+  "expected_counts": {
+    "measurement": 1,
+    "step": 10,
+    "forward": 10,
+    "attention": 240,
+    "attention_softmax": 240,
+    "loss": 10,
+    "backward": 10
+  },
+  "kernel_events": 41120,
+  "formal_steps": 10,
+  "valid": true
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "vocab_size": 128,
+    "d_model": 32,
+    "d_ff": 64,
+    "num_layers": 2,
+    "num_heads": 4,
+    "rope_theta": 10000.0,
+    "batch_size": 2,
+    "seq_len": 8,
+    "device": "cpu",
+    "precision": "torch.float32",
+    "parameter_dtype": "torch.float32",
+    "autocast": false,
+    "tf32_matmul": false,
+    "seed": 0,
+    "norm_position": "pre",
+    "use_rope": true,
+    "ffn_type": "swiglu",
+    "lr": 0.001,
+    "mode": "train",
+    "warmup": 1,
+    "steps": 2,
+    "memory_profile": false,
+    "inference": false,
+    "implementation": "eager",
+    "compile_backend": null,
+    "compile_mode": null,
+    "first_call_ms": null,
+    "torch_version": "2.11.0",
+    "cuda_version": null,
+    "gpu": null,
+    "stage": "total",
+    "mean_ms": 1.6957290936261415,
+    "std_ms": 0.05176587886674362,
+    "samples_ms": [
+      1.7323330976068974,
+      1.6591250896453857
+    ]
+  }
+]

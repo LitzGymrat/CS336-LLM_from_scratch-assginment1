@@ -1,0 +1,6 @@
+{
+  "cs336_systems/flash_attention2.py": "bc3257d07fde1228f0538ee82fe6f2f1578a5aeefbc3fcb3bcfb04c7e47f7ddc",
+  "cs336_systems/flash_attention2_triton.py": "cf50b5c8764da357c867cd5ce5d9cacaac65cef4eafe1b47aa8e591df91f3eca",
+  "tests/adapters.py": "c0db7261b379170423ed99957185f40c3585ca40b61211652d2cdbd7e7cae5a6",
+  "tests/test_attention.py": "88da8191dbfd36362d720c635a6161175dbdac5fe5663d32d2405367b77ec6e3"
+}

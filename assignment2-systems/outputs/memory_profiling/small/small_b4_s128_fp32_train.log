@@ -1,0 +1,6 @@
+[W1008 15:36:06.141328012 unwind.cpp:216] Warning: Unsupported unwinding pattern: unknown op code 0x8 (function unwinderFor)
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=128, batch_size=4, device='cuda', precision='fp32', seed=0, lr=0.001, steps=2, warmup=1, mode='train', output_prefix='/root/autodl-tmp/cs336/assignment2-systems/outputs/memory_profiling/small/small_b4_s128_fp32_train', nvtx=False, memory_profile=True, inference=False)
+显存快照：/root/autodl-tmp/cs336/assignment2-systems/outputs/memory_profiling/small/small_b4_s128_fp32_train.pickle
+[total] 每次耗时(ms): [73.08558374643326, 78.08427885174751]
+平均耗时：75.585 ms
+标准差：3.535 ms

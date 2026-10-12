@@ -1,0 +1,30 @@
+\begin{tabular}{llr}
+\toprule
+case & implementation & allocated\_gib \\
+\midrule
+注意力
+反向开始前 & eager & 4.173 \\
+注意力
+反向开始前 & compiled & 4.173 \\
+注意力
+前向峰值 & eager & 8.142 \\
+注意力
+前向峰值 & compiled & 4.173 \\
+注意力
+反向峰值 & eager & 12.204 \\
+注意力
+反向峰值 & compiled & 8.204 \\
+模型
+前向峰值 & eager & 10.335 \\
+模型
+前向峰值 & compiled & 8.449 \\
+模型
+前反向峰值 & eager & 10.572 \\
+模型
+前反向峰值 & compiled & 8.687 \\
+模型
+训练峰值 & eager & 13.730 \\
+模型
+训练峰值 & compiled & 11.844 \\
+\bottomrule
+\end{tabular}

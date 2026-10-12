@@ -1,0 +1,32 @@
+wandb: Tracking run with wandb version 0.25.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablation-smoke-20260929-213712-574324/no-rmsnorm-lr1e-4/wandb/offline-run-20260929_213734-2yh0rqwe
+wandb: WARNING URL not available in offline run
+step=0 time=0.1s train=23.0755 valid=26.6382 lr=0
+step=1 time=0.2s train=23.0755 valid=26.6382 lr=0
+step=2 time=0.3s train=22.7824 valid=26.1227 lr=0.0001
+step=3 time=0.5s train=21.7828 valid=26.0852 lr=1e-05
+wandb: 
+wandb: Run history:
+wandb: loss_vs_time/train ██▆▁
+wandb: loss_vs_time/valid ██▁▁
+wandb:                 lr ▁▁█▂
+wandb:               step ▁▃▆█
+wandb:        tokens_seen ▁▃▆█
+wandb:         train_loss ██▆▁
+wandb:         valid_loss ██▁▁
+wandb:       wall_seconds ▁▃▄█
+wandb: 
+wandb: Run summary:
+wandb: loss_vs_time/train 21.78276
+wandb: loss_vs_time/valid 26.08518
+wandb:                 lr 1e-05
+wandb:               step 3
+wandb:        tokens_seen 192
+wandb:         train_loss 21.78276
+wandb:         valid_loss 26.08518
+wandb:       wall_seconds 0.459
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablation-smoke-20260929-213712-574324/no-rmsnorm-lr1e-4/wandb/offline-run-20260929_213734-2yh0rqwe
+wandb: Find logs at: /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablation-smoke-20260929-213712-574324/no-rmsnorm-lr1e-4/wandb/offline-run-20260929_213734-2yh0rqwe/logs

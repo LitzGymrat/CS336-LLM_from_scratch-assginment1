@@ -1,0 +1,7 @@
+{
+  "output_bitwise_equal": true,
+  "all_gradients_bitwise_equal": true,
+  "softmax_restored": true,
+  "device": "cuda",
+  "seed_for_validation_only": 42
+}

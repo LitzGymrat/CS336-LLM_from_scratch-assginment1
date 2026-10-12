@@ -1,0 +1,8 @@
+{
+  "status": "oom",
+  "profile_phase": "measurement",
+  "measurement_start_allocated_bytes": 0,
+  "peak_allocated_bytes": 17223516160,
+  "peak_reserved_bytes": 17244880896,
+  "snapshot_path": "outputs/pytorch_attention/oom_d16_s16384.pickle"
+}

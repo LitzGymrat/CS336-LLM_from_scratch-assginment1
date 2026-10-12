@@ -1,0 +1,11 @@
+#table(
+  columns: 6,
+  align: left,
+  table.header("model", "mode", "last_success_S", "first_OOM_S", "profile_peak_allocated_GiB", "profile_peak_reserved_GiB"),
+  "small", "forward", "1024", "2048", "9.423", "9.516",
+  "small", "forward_backward", "1024", "2048", "9.934", "10.541",
+  "small", "train", "1024", "2048", "10.911", "11.566",
+  "medium", "forward", "512", "1024", "10.335", "10.623",
+  "medium", "forward_backward", "512", "1024", "10.572", "10.998",
+  "medium", "train", "512", "1024", "13.73", "14.205",
+)

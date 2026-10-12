@@ -1,0 +1,13 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=256, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='train', output_prefix='outputs/nsight_run/profiles/small_s256_train_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-0bd3.qdstrm'
+[1/1] [0%                          ] small_s256_train.nsys-repProcessing events...
+[1/1] [0%                          ] small_s256_train.nsys-rep[1/1] [8%                          ] small_s256_train.nsys-rep[1/1] [=16%                        ] small_s256_train.nsys-rep[1/1] [=============58%            ] small_s256_train.nsys-rep[1/1] [========================99% ] small_s256_train.nsys-rep[1/1] [====25%                     ] small_s256_train.nsys-rep[1/1] [==19%                       ] small_s256_train.nsys-rep[1/1] [=17%                        ] small_s256_train.nsys-rep[1/1] [======33%                   ] small_s256_train.nsys-rep[1/1] [===========50%              ] small_s256_train.nsys-rep[1/1] [===============66%          ] small_s256_train.nsys-rep[1/1] [==================75%       ] small_s256_train.nsys-rep[1/1] [========================100%] small_s256_train.nsys-rep[1/1] [========================100%] small_s256_train.nsys-rep
+[total] 每次耗时(ms): [78.42082902789116, 74.58319887518883, 74.95007291436195, 81.64478093385696, 75.63834264874458, 74.94355365633965, 74.2870457470417, 76.06840878725052, 77.84870266914368, 79.44750040769577]
+平均耗时：76.783 ms
+标准差：2.454 ms
+peak_allocated_GiB=3.019
+peak_reserved_GiB=3.217
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/small_s256_train.nsys-rep

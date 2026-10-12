@@ -1,0 +1,7 @@
+\begin{tabular}{rrrrrrrrlllrrrlrlrlrrrrlllrlllrrlrr}
+\toprule
+vocab\_size & d\_model & d\_ff & num\_layers & num\_heads & rope\_theta & batch\_size & seq\_len & device & precision & parameter\_dtype & autocast & tf32\_matmul & seed & norm\_position & use\_rope & ffn\_type & lr & mode & warmup & steps & memory\_profile & inference & implementation & compile\_backend & compile\_mode & first\_call\_ms & torch\_version & cuda\_version & gpu & peak\_allocated\_mib & peak\_reserved\_mib & stage & mean\_ms & std\_ms \\
+\midrule
+10000 & 1024 & 4096 & 24 & 16 & 10000.000 & 4 & 512 & cuda & torch.float32 & torch.float32 & False & False & 0 & pre & True & swiglu & 0.001 & forward\_backward & 5 & 10 & False & False & eager & -- & -- & 625.362 & 2.11.0+cu128 & 12.8 & NVIDIA GeForce RTX 4090 & 10826.200 & 11262.000 & total & 248.191 & 1.736 \\
+\bottomrule
+\end{tabular}

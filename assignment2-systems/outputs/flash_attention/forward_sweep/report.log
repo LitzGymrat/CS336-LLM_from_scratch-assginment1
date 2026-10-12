@@ -1,0 +1,19 @@
+Successful: 152; OOM: 8; paired table: 80
+precision  head_dim  seq_len  triton_ms  pytorch_ms  forward_speedup  triton_peak_mib  pytorch_peak_mib triton_status pytorch_status
+     bf16        16    32768   2.873856   26.881023         9.353643            4.125          6156.375            ok             ok
+     bf16        16    65536  11.852800         NaN              NaN            8.250               NaN            ok            oom
+     bf16        32    32768   5.141504   26.899840         5.231901            8.125          6160.375            ok             ok
+     bf16        32    65536  18.427904         NaN              NaN           16.250               NaN            ok            oom
+     bf16        64    32768   5.270336   27.021824         5.127154           16.125          6168.375            ok             ok
+     bf16        64    65536  20.929567         NaN              NaN           32.250               NaN            ok            oom
+     bf16       128    32768   8.129536   27.317664         3.360298           32.125          6184.375            ok             ok
+     bf16       128    65536  32.372738         NaN              NaN           64.250               NaN            ok            oom
+     fp32        16    32768   4.660736   50.288111        10.789736            8.125         10256.375            ok             ok
+     fp32        16    65536  19.011071         NaN              NaN           16.250               NaN            ok            oom
+     fp32        32    32768   5.964864   50.290688         8.431154           16.125         10264.375            ok             ok
+     fp32        32    65536  22.097792         NaN              NaN           32.250               NaN            ok            oom
+     fp32        64    32768   8.370176   51.737007         6.181114           32.125         10280.375            ok             ok
+     fp32        64    65536  32.490498         NaN              NaN           64.250               NaN            ok            oom
+     fp32       128    32768  15.108192   51.611649         3.416137           64.125         10312.375            ok             ok
+     fp32       128    65536  61.206017         NaN              NaN          128.250               NaN            ok            oom
+Saved /root/autodl-tmp/cs336/assignment2-systems/docs/flash_forward_sweep_report.md

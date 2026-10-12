@@ -1,0 +1,50 @@
+[
+  {
+    "d_model": 8,
+    "seq_len": 16,
+    "batch_size": 8,
+    "device": "cpu",
+    "gpu": null,
+    "dtype": "torch.float32",
+    "torch_version": "2.11.0",
+    "cuda_version": null,
+    "tf32_matmul": false,
+    "attention_source": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+    "causal": false,
+    "warmup": 1,
+    "steps": 2,
+    "seed": 0,
+    "status": "ok",
+    "phase": "complete",
+    "error": null,
+    "implementation": "eager",
+    "compile_backend": null,
+    "compile_mode": null,
+    "first_call_ms": 178.68479201570153,
+    "memory_estimate_scope": "eager 手写 softmax；compiled 以实测显存为准",
+    "forward_mean_ms": 0.08902052650228143,
+    "forward_std_ms": 0.00047945650294423103,
+    "backward_mean_ms": 0.10158354416489601,
+    "backward_std_ms": 0.01174944918602705,
+    "baseline_allocated_mib": null,
+    "before_backward_allocated_mib": null,
+    "forward_retained_extra_mib": null,
+    "forward_peak_allocated_mib": null,
+    "backward_peak_allocated_mib": null,
+    "forward_samples_ms": [
+      0.0885410699993372,
+      0.08949998300522566
+    ],
+    "backward_samples_ms": [
+      0.11333299335092306,
+      0.08983409497886896
+    ],
+    "attention_matrix_mib": 0.0078125,
+    "qkv_mib": 0.01171875,
+    "saved_extra_estimate_mib": 0.01708984375,
+    "forward_retained_extra_estimate_mib": 0.02099609375,
+    "before_backward_estimate_mib": 0.03662109375,
+    "forward_matmul_flops": 65536,
+    "backward_matmul_flops": 131072
+  }
+]

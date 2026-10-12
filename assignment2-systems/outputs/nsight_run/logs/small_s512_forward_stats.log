@@ -1,0 +1,5 @@
+Generating SQLite file outputs/nsight_run/profiles/small_s512_forward.sqlite from outputs/nsight_run/profiles/small_s512_forward.nsys-rep
+Processing [outputs/nsight_run/profiles/small_s512_forward.sqlite] with [/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py] to [outputs/nsight_run/analysis/small_s512_forward_cuda_gpu_kern_sum.csv]... PROCESSED
+
+Processing [outputs/nsight_run/profiles/small_s512_forward.sqlite] with [/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/reports/nvtx_gpu_proj_sum.py] to [outputs/nsight_run/analysis/small_s512_forward_nvtx_gpu_proj_sum.csv]... PROCESSED
+

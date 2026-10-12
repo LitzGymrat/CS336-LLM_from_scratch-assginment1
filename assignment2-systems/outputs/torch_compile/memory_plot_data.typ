@@ -1,0 +1,17 @@
+#table(
+  columns: 3,
+  align: left,
+  table.header("case", "implementation", "allocated_gib"),
+  "注意力\n反向开始前", "eager", "4.173",
+  "注意力\n反向开始前", "compiled", "4.173",
+  "注意力\n前向峰值", "eager", "8.142",
+  "注意力\n前向峰值", "compiled", "4.173",
+  "注意力\n反向峰值", "eager", "12.204",
+  "注意力\n反向峰值", "compiled", "8.204",
+  "模型\n前向峰值", "eager", "10.335",
+  "模型\n前向峰值", "compiled", "8.449",
+  "模型\n前反向峰值", "eager", "10.572",
+  "模型\n前反向峰值", "compiled", "8.687",
+  "模型\n训练峰值", "eager", "13.73",
+  "模型\n训练峰值", "compiled", "11.844",
+)

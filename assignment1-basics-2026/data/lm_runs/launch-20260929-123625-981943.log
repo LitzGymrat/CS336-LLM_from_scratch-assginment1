@@ -1,0 +1,10 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /Users/mileszhu/.netrc.
+wandb: Currently logged in as: litzgymrat (litzgymrat-nanjing-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 9ipyn2hk
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/tinystories-train-20260929-123626-944382/wandb/run-20260929_123637-9ipyn2hk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tinystories-train
+wandb: ⭐️ View project at https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1
+wandb: 🚀 View run at https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1/runs/9ipyn2hk
+step=0 time=2.4s train=9.2557 valid=9.2640 lr=0

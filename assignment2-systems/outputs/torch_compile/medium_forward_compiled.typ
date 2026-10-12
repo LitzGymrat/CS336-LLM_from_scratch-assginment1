@@ -1,0 +1,6 @@
+#table(
+  columns: 37,
+  align: left,
+  table.header("vocab_size", "d_model", "d_ff", "num_layers", "num_heads", "rope_theta", "batch_size", "seq_len", "device", "precision", "parameter_dtype", "autocast", "tf32_matmul", "seed", "norm_position", "use_rope", "ffn_type", "lr", "mode", "warmup", "steps", "memory_profile", "inference", "implementation", "compile_backend", "compile_mode", "first_call_ms", "torch_version", "cuda_version", "gpu", "peak_allocated_mib", "peak_reserved_mib", "compiled_graphs", "graph_breaks", "stage", "mean_ms", "std_ms"),
+  "10000", "1024", "4096", "24", "16", "10000.0", "4", "512", "cuda", "torch.float32", "torch.float32", "False", "False", "0", "pre", "True", "swiglu", "0.001", "forward", "5", "10", "False", "False", "compiled", "inductor", "default", "47741.008", "2.11.0+cu128", "12.8", "NVIDIA GeForce RTX 4090", "8651.855", "8866.0", "1", "0", "total", "57.621", "0.064",
+)

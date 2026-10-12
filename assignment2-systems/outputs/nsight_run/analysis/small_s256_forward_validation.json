@@ -1,0 +1,20 @@
+{
+  "profile": "outputs/nsight_run/profiles/small_s256_forward.nsys-rep",
+  "nvtx_counts": {
+    "attention": 120,
+    "attention_softmax": 120,
+    "forward": 10,
+    "measurement": 1,
+    "step": 10
+  },
+  "expected_counts": {
+    "measurement": 1,
+    "step": 10,
+    "forward": 10,
+    "attention": 120,
+    "attention_softmax": 120
+  },
+  "kernel_events": 7400,
+  "formal_steps": 10,
+  "valid": true
+}

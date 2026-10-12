@@ -1,0 +1,89 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /Users/mileszhu/.netrc.
+wandb: Currently logged in as: litzgymrat (litzgymrat-nanjing-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run zt37vjcv
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablations-20260929-213949-817828/no-rope/wandb/run-20260930_002651-zt37vjcv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run no-rope
+wandb: ⭐️ View project at https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1
+wandb: 🚀 View run at https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1/runs/zt37vjcv
+step=0 time=1.6s train=9.2571 valid=9.2637 lr=0
+step=100 time=92.1s train=3.6544 valid=3.8330 lr=0.00099
+step=200 time=188.5s train=3.2264 valid=3.4109 lr=0.000999093
+step=300 time=285.0s train=2.9245 valid=3.1206 lr=0.000996341
+step=400 time=380.9s train=2.7034 valid=2.9115 lr=0.000991753
+step=500 time=477.0s train=2.5425 valid=2.7684 lr=0.00098535
+step=600 time=573.1s train=2.4140 valid=2.6450 lr=0.000977157
+step=700 time=669.1s train=2.3351 valid=2.5672 lr=0.000967208
+step=800 time=765.0s train=2.2520 valid=2.4930 lr=0.000955543
+step=900 time=861.0s train=2.1990 valid=2.4336 lr=0.000942212
+step=1000 time=956.9s train=2.1479 valid=2.3796 lr=0.000927268
+step=1100 time=1053.3s train=2.1124 valid=2.3444 lr=0.000910773
+step=1200 time=1149.3s train=2.0665 valid=2.2982 lr=0.000892796
+step=1300 time=1245.2s train=2.0432 valid=2.2751 lr=0.000873409
+step=1400 time=1341.3s train=2.0097 valid=2.2305 lr=0.000852692
+step=1500 time=1438.1s train=1.9943 valid=2.2134 lr=0.000830732
+step=1600 time=1534.7s train=1.9645 valid=2.1890 lr=0.000807617
+step=1700 time=1630.9s train=1.9352 valid=2.1705 lr=0.000783443
+step=1800 time=1726.9s train=1.9245 valid=2.1419 lr=0.000758309
+step=1900 time=1823.0s train=1.9037 valid=2.1164 lr=0.000732319
+step=2000 time=1920.1s train=1.8899 valid=2.0977 lr=0.00070558
+step=2100 time=2016.1s train=1.8755 valid=2.0908 lr=0.000678201
+step=2200 time=2111.9s train=1.8528 valid=2.0726 lr=0.000650295
+step=2300 time=2208.1s train=1.8329 valid=2.0573 lr=0.000621977
+step=2400 time=2304.3s train=1.8294 valid=2.0345 lr=0.000593363
+step=2500 time=2400.3s train=1.8072 valid=2.0240 lr=0.00056457
+step=2600 time=2496.2s train=1.8000 valid=2.0107 lr=0.000535718
+step=2700 time=2592.0s train=1.7893 valid=1.9969 lr=0.000506924
+step=2800 time=2688.0s train=1.7677 valid=1.9837 lr=0.000478308
+step=2900 time=2783.9s train=1.7585 valid=1.9685 lr=0.000449986
+step=3000 time=2880.3s train=1.7582 valid=1.9651 lr=0.000422076
+step=3100 time=2977.9s train=1.7439 valid=1.9458 lr=0.000394691
+step=3200 time=3073.9s train=1.7363 valid=1.9359 lr=0.000367944
+step=3300 time=3169.9s train=1.7227 valid=1.9250 lr=0.000341947
+step=3400 time=3266.2s train=1.7133 valid=1.9139 lr=0.000316804
+step=3500 time=3362.1s train=1.6930 valid=1.9045 lr=0.00029262
+step=3600 time=3458.2s train=1.6880 valid=1.8945 lr=0.000269494
+step=3700 time=3554.4s train=1.6846 valid=1.8850 lr=0.000247521
+step=3800 time=3650.4s train=1.6737 valid=1.8759 lr=0.000226792
+step=3900 time=3746.5s train=1.6676 valid=1.8705 lr=0.000207391
+step=4000 time=3842.5s train=1.6595 valid=1.8676 lr=0.000189399
+step=4100 time=3938.5s train=1.6568 valid=1.8546 lr=0.000172889
+step=4200 time=4034.2s train=1.6531 valid=1.8501 lr=0.00015793
+step=4300 time=4130.1s train=1.6461 valid=1.8465 lr=0.000144582
+step=4400 time=4226.2s train=1.6381 valid=1.8390 lr=0.000132901
+step=4500 time=4322.9s train=1.6323 valid=1.8357 lr=0.000122934
+step=4600 time=4419.2s train=1.6278 valid=1.8301 lr=0.000114723
+step=4700 time=4515.5s train=1.6318 valid=1.8247 lr=0.000108302
+step=4800 time=4611.5s train=1.6261 valid=1.8252 lr=0.000103696
+step=4900 time=4707.9s train=1.6195 valid=1.8205 lr=0.000100925
+step=5000 time=4803.9s train=1.6192 valid=1.8186 lr=0.0001
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log; uploading config.yaml
+wandb: uploading history steps 49-50, summary, console lines 50-50
+wandb: 
+wandb: Run history:
+wandb: loss_vs_time/train █▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: loss_vs_time/valid █▃▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 lr ████████▇▇▇▇▇▇▆▆▆▆▅▅▅▄▄▄▄▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:               step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:        tokens_seen ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         train_loss █▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         valid_loss █▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       wall_seconds ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Run summary:
+wandb: loss_vs_time/train 1.61921
+wandb: loss_vs_time/valid 1.81856
+wandb:                 lr 0.0001
+wandb:               step 5000
+wandb:        tokens_seen 40960000
+wandb:         train_loss 1.61921
+wandb:         valid_loss 1.81856
+wandb:       wall_seconds 4803.92256
+wandb: 
+wandb: 🚀 View run no-rope at: https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1/runs/zt37vjcv
+wandb: ⭐️ View project at: https://wandb.ai/litzgymrat-nanjing-university/cs336-assignment1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablations-20260929-213949-817828/no-rope/wandb/run-20260930_002651-zt37vjcv/logs

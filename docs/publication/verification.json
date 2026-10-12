@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-12",
+  "package_lock_check": "passed: uv lock --check --offline",
+  "python_syntax_files": 213,
+  "index_link_check": "passed",
+  "benchmark_help": "passed",
+  "cpu_train_smoke": "passed: d_model32, d_ff64, layers2, heads4, batch2, context8, warmup1, steps2",
+  "flash_forward_report_rebuild": {
+    "status": "passed",
+    "success_rows": 152,
+    "oom_rows": 8,
+    "paired_configurations": 80
+  },
+  "kernel_sha256": "c6531679748c78e1155fdb5ace6ab784fb2c2a46ce1512985ab9091c199ccd88",
+  "kernel_same_as_current_workspace": true,
+  "attention_pytest_local": {
+    "status": "collection failed",
+    "reason": "Mac environment has no Triton; current adapters import Triton eagerly",
+    "does_not_validate_cuda": true
+  },
+  "raw_archive": {
+    "file": "cs336-a2-raw-results-20261012.zip",
+    "bytes": 62064126,
+    "sha256": "5f5011bcf37baae8f7c47bab9f27dc8aa987b52c712b28979f22b843aef241dc",
+    "crc": "passed"
+  },
+  "historical_cuda_results": "see assignment2-systems/outputs/flash_attention/final/pytest.log; not re-run in this publication",
+  "scope": "packaging and publication checks; no new performance experiment",
+  "git_review": {
+    "scope": "new index documentation and attributes",
+    "source_whitespace": "preserved without changing historical/user source",
+    "legacy_files": "no old A1 implementation changed"
+  }
+}

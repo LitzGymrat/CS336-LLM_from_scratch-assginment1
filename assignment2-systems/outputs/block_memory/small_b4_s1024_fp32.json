@@ -1,0 +1,120 @@
+{
+  "config": {
+    "d_model": 768,
+    "d_ff": 3072,
+    "num_heads": 12,
+    "batch_size": 4,
+    "context_len": 1024,
+    "rope_theta": 10000.0,
+    "warmup": 1,
+    "seed": 0,
+    "output_prefix": "/root/autodl-tmp/cs336/assignment2-systems/outputs/block_memory/small_b4_s1024_fp32"
+  },
+  "scope": "one isolated block, forward and backward, no optimizer",
+  "precision": "torch.float32",
+  "cuda_memory_caching": false,
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "model_source": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Transformer_block.py",
+  "transformer_source_sha256": {
+    "Embedding_module.py": "8295e87789285fada02da482bf6a14a647ea11a2261dd9f23d24be2e42c3e515",
+    "Linear_module.py": "f15a0c7e72a1be3f355125751b59c834dbbda083e34066a79c1554d9bf610aea",
+    "Multihead_self_attention_module.py": "26df5539695b56ff232bbdf9875578284956a528abab84875bc98de0d56bf1eb",
+    "RMSNorm_module.py": "e67f6757016dc1ad0ebf3520d50eb39ca0dc5128efd34d4a4ced79f07152fffa",
+    "RoPE_module.py": "c1679d91bc908447b72e82ede2c68a4f80017a710ac61e6f6c963eaadb213a09",
+    "Scaled_dot_product_function.py": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5",
+    "SoftMax_function.py": "d40686226b0035dd5bc66d745e7c840628c1f08124d86be4e2fe4d8b2f0815e1",
+    "Swiglu_module.py": "9ceeb9459439756812ba56c8b86ef9e4250888b01ae042f89c2b319e3885eb4d",
+    "Transformer_block.py": "707fa12727243df3f39eeaf840425e04be914c1e3a63f3c273c19ceeee67d1a5",
+    "Transformer_lm.py": "f171570d94fb2fde1c48065cd61e2264940fd7bb086d65c71d3399fce7537390"
+  },
+  "parameter_count": 9438720,
+  "parameter_bytes": 37754880,
+  "parameter_gradient_bytes": 37754880,
+  "input_bytes": 12582912,
+  "output_bytes": 12582912,
+  "input_gradient_bytes": 12582912,
+  "upstream_gradient_bytes": 12582912,
+  "parameter_gradients": [
+    {
+      "parameter": "rmsnorm_1.gamma",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 3072
+    },
+    {
+      "parameter": "rmsnorm_2.gamma",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 3072
+    },
+    {
+      "parameter": "swiglu.w1",
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 9437184
+    },
+    {
+      "parameter": "swiglu.w2",
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "torch.float32",
+      "bytes": 9437184
+    },
+    {
+      "parameter": "swiglu.w3",
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 9437184
+    },
+    {
+      "parameter": "msa.q_proj",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 2359296
+    },
+    {
+      "parameter": "msa.k_proj",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 2359296
+    },
+    {
+      "parameter": "msa.v_proj",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 2359296
+    },
+    {
+      "parameter": "msa.o_proj",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float32",
+      "bytes": 2359296
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+\begin{tabular}{rrrrrrrrlllrrrlrlrlrrrrlllrllllrr}
+\toprule
+vocab\_size & d\_model & d\_ff & num\_layers & num\_heads & rope\_theta & batch\_size & seq\_len & device & precision & parameter\_dtype & autocast & tf32\_matmul & seed & norm\_position & use\_rope & ffn\_type & lr & mode & warmup & steps & memory\_profile & inference & implementation & compile\_backend & compile\_mode & first\_call\_ms & torch\_version & cuda\_version & gpu & stage & mean\_ms & std\_ms \\
+\midrule
+64 & 32 & 128 & 1 & 4 & 10000.000 & 2 & 8 & cpu & torch.float32 & torch.float32 & False & False & 0 & pre & True & swiglu & 0.001 & train\_stages & 1 & 2 & False & False & eager & -- & -- & 27.665 & 2.11.0 & -- & -- & forward\_with\_loss & 0.355 & 0.030 \\
+64 & 32 & 128 & 1 & 4 & 10000.000 & 2 & 8 & cpu & torch.float32 & torch.float32 & False & False & 0 & pre & True & swiglu & 0.001 & train\_stages & 1 & 2 & False & False & eager & -- & -- & 27.665 & 2.11.0 & -- & -- & backward & 0.357 & 0.024 \\
+64 & 32 & 128 & 1 & 4 & 10000.000 & 2 & 8 & cpu & torch.float32 & torch.float32 & False & False & 0 & pre & True & swiglu & 0.001 & train\_stages & 1 & 2 & False & False & eager & -- & -- & 27.665 & 2.11.0 & -- & -- & optimizer & 0.232 & 0.032 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,22 @@
+{
+  "raw_transfer_sha256_verified_files": 159,
+  "missing": [],
+  "changed": [],
+  "official_kernel_summary_full_comparisons": 15,
+  "kernel_launches_joined_once": true,
+  "kernel_calls_constant_across_10_steps": true,
+  "stage_kernel_sums_equal_total": true,
+  "report_local_links_valid": true,
+  "formal_parameters_checked": true,
+  "formal_profiles": 15,
+  "event_csv_files": 15,
+  "report_sha256": "02b331370c0bfa3d4b90473a8fefc8a8318d976c9e5c2060cec0f5e7c741de6a",
+  "figures": {
+    "attention_comparison.png": "54807d8d5d5694e163c6a8a93dfd6a6adad906d75e42cc0e695191ddf0f8e8c7",
+    "forward_comparison.png": "faee1c8853c865b07567f414ab218730ba0aea2602ef28cb453ed07e0104dab3",
+    "medium_matmul_share.png": "73b5b3378f4e50ee4928558a18bc2f853f4bf507b6868e2a6c7f688cc1bde48b",
+    "small_matmul_share.png": "0205ca2f3fe59b1b8a068fff17ee4ec20bc67634a46a6f5a77f1ddaa0a0014c7"
+  },
+  "visual_qa": "all four PNG figures inspected; labels, units and legends readable",
+  "core_computation_modified": false
+}

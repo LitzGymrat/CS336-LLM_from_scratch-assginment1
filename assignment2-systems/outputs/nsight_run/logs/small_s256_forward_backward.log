@@ -1,0 +1,13 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=256, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='forward_backward', output_prefix='outputs/nsight_run/profiles/small_s256_forward_backward_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-a03a.qdstrm'
+[1/1] [0%                          ] small_s256_forward_backward.nsys-repProcessing events...
+[1/1] [0%                          ] small_s256_forward_backward.nsys-rep[1/1] [6%                          ] small_s256_forward_backward.nsys-rep[1/1] [12%                         ] small_s256_forward_backward.nsys-rep[1/1] [============55%             ] small_s256_forward_backward.nsys-rep[1/1] [========================99% ] small_s256_forward_backward.nsys-rep[1/1] [====28%                     ] small_s256_forward_backward.nsys-rep[1/1] [============55%             ] small_s256_forward_backward.nsys-rep[1/1] [==================75%       ] small_s256_forward_backward.nsys-rep[1/1] [========================100%] small_s256_forward_backward.nsys-rep[1/1] [========================100%] small_s256_forward_backward.nsys-rep
+[total] 每次耗时(ms): [69.70828026533127, 58.686088770627975, 78.32006737589836, 73.50260764360428, 61.487920582294464, 74.00184497237206, 60.639720410108566, 72.26519286632538, 54.2881079018116, 59.83271449804306]
+平均耗时：66.273 ms
+标准差：8.180 ms
+peak_allocated_GiB=2.002
+peak_reserved_GiB=2.107
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/small_s256_forward_backward.nsys-rep

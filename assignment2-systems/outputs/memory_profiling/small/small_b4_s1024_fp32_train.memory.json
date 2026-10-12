@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "profile_phase": "measurement",
+  "measurement_start_allocated_bytes": 2103275520,
+  "peak_allocated_bytes": 11708538880,
+  "peak_reserved_bytes": 12419334144,
+  "snapshot_path": "/root/autodl-tmp/cs336/assignment2-systems/outputs/memory_profiling/small/small_b4_s1024_fp32_train.pickle"
+}

@@ -1,0 +1,122 @@
+1.
+
+chr():返回对应十进制编号-码点-的unicode字符
+
+
+(a)What Unicode character does chr(0) return?
+
+返回Unicode空字符
+
+(b) How does this character’s string representation (__repr__()) differ from its printed 
+representation?
+
+repr()：对于对应编号的unicode字符，显示便于检查的字符串表示例如'\n','\x00'，将不可见字符转为转义序列。主要用于检查和调试
+print():直接将unicode字符打印出来，是否可见取决于字符本身是否可见
+码点：U+0000，16进制编码，给每个字符的编号
+
+(c) What happens when this character occurs in text? It may be helpful to play around with the 
+following in your Python interpreter and see if it matches your expectations:
+
+>>> chr(0) 
+>>> print(chr(0))
+
+>>> "this is a test" + chr(0) + "string"
+>>> print("this is a test" + chr(0) + "string")
+Deliverable: A one-sentence response.
+
+python交互式解释器（终端中输入python进入，control+D推出）：
+第一行：返回'\x00' 
+第二行：返回空字符
+第三行：this is a test\x00string'
+第四行：this is a teststring
+空字符在打印时不显示
+
+2.
+Utf-8:将Unicode每个字符的独立编码，转换成可变长度(1-4个)的字节序列，（每个8位，0-255）
+从而进行存储和传输。
+
+原来独立编码非常多，转为字节之后，词表变为0-255，更加可管理。
+byte-level tokenization，不需要担心词表外token，因为所有都可以被0-255字节序列表示。
+比如：
+
+字符：         中
+Unicode 编号： 20013，即 U+4E2D
+
+UTF-8 字节：
+┌──────────┬──────────┬──────────┐
+│ 11100100 │ 10111000 │ 10101101 │  二进制
+│    E4    │    B8    │    AD    │  十六进制
+└──────────┴──────────┴──────────┘
+
+Problem (unicode2):  Unicode Encodings (3 points)
+
+(a) What are some reasons to prefer training our tokenizer on UTF-8 encoded bytes, rather than 
+UTF-16 or UTF-32? It may be helpful to compare the output of these encodings for various 
+input strings.
+
+>>> test_string = "黎子姗"
+>>> utf8_encoded = test_string.encode("utf-8")
+>>> utf16_encoded = test_string.encode("utf-16")
+>>> utf32_encoded = test_string.encode("utf-32")
+>>> print(utf8_encoded)
+b'\xe9\xbb\x8e\xe5\xad\x90\xe5\xa7\x97'
+>>> print(utf16_encoded)
+b'\xff\xfe\xce\x9eP[\xd7Y'
+>>> print(utf32_encoded)
+b'\xff\xfe\x00\x00\xce\x9e\x00\x00P[\x00\x00\xd7Y\x00\x00'
+
+UTF-8 对英文更紧凑；UTF-16 对常见汉字更紧凑
+采用UTF-8编码的语料字节序列更短，更加省空间，efficiency更好。
+
+Deliverable: A one-to-two sentence response.
+
+(b) Consider the following (incorrect) function, which is intended to decode a UTF-8 byte string 
+into a Unicode string. Why is this function incorrect? Provide an example of an input byte 
+string that yields incorrect results.
+
+def decode_utf8_bytes_to_str_wrong(bytestring: bytes):
+ return "".join([bytes([b]).decode("utf-8") for b in bytestring])
+>>> decode_utf8_bytes_to_str_wrong("hello".encode("utf-8"))
+
+'hello'
+Deliverable: An example input byte string for which decode_utf8_bytes_to_str_wrong
+例子：decode_utf8_bytes_to_str_wrong("黎子姗".encode("utf-8"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in decode_utf8_bytes_to_str_wrong
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 0: unexpected end of dat
+
+错误的解码方法是逐个字节进行解码，然而utf-8方式中，每个字符可能对应1-4个字节，错误的解码方法只考虑了一个字节，因而会出现错误的解码
+遇到多字节字符时，会因字节序列不完整，抛出解码异常
+produces incorrect output, with a one-sentence explanation of why the function is incorrect.
+
+(c) Give a two-byte sequence that does not decode to any Unicode character(s).
+Deliverable: An example, with a one-sentence explanation.
+//UTF-8第一个字节会指示该字符总共需要的字节数。如果最后提供的字节数不满足，就会报错：
+第一个字节的二进制开头	这个字符总共需要
+0...	                1 字节
+110...	                2 字节
+1110...	                3 字节
+11110...	            4 字节
+
+"黎子姗"的uft-8编码是b'\xe9\xbb\x8e'，其中第一个字节开头的二进制编码为1110，表明需要三个字节
+但是只输入前两个字节：报错数据提前结束。
+b'\xe9\xbb'.decode("utf-8")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 0-1: unexpected end of data
+
+Pre-tokenize：预分词：
+1.减少重复的文本处理：原来文本很长，可能cat出现了一百次，假如每次都要遍历100次cat，那么非常浪费算力。我们真正关心的是
+文本内容（字节对）以及出现的频次，所以可以预先以一定的单位去重，保留小片段和频次，后续就只需要对每个小片段单位作处理。
+
+
+2.划分边界，约束词表学习的方向：如果直接只去统计字节对频次，可能会有一些不理想的情况，比如dog!和dog.被完全分为两个不同的token，但是他们语义相似。
+预分词：划定BPE的边界，只在每个pre-token内部进行Merge，避免cat和!合起来的情况。让cat一定是一个分开的token和!,.,?组合使用。这样的token划分也更加单位化合理。按照单词等划分，
+词表中的token更大概率可以可复用（因为经常是一个单词中的一些元素重复出现）
+如果允许随意合并可能学习到一些区分度没那么好的token，比如dog!和dog.。
+
+考虑efficiency。
+
+特殊词元Special token:用于编码一些原数据，比如文件间的边界
+例子：<|endoftext|>表示生成结束

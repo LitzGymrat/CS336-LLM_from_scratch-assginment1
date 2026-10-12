@@ -1,0 +1,7 @@
+\begin{tabular}{rrrlllllrlrrrrllllllrlrrrrrrrrrrrrrrrr}
+\toprule
+d\_model & seq\_len & batch\_size & device & gpu & dtype & torch\_version & cuda\_version & tf32\_matmul & attention\_source & causal & warmup & steps & seed & status & phase & error & implementation & compile\_backend & compile\_mode & first\_call\_ms & memory\_estimate\_scope & forward\_mean\_ms & forward\_std\_ms & backward\_mean\_ms & backward\_std\_ms & baseline\_allocated\_mib & before\_backward\_allocated\_mib & forward\_retained\_extra\_mib & forward\_peak\_allocated\_mib & backward\_peak\_allocated\_mib & attention\_matrix\_mib & qkv\_mib & saved\_extra\_estimate\_mib & forward\_retained\_extra\_estimate\_mib & before\_backward\_estimate\_mib & forward\_matmul\_flops & backward\_matmul\_flops \\
+\midrule
+128 & 8192 & 8 & cuda & NVIDIA GeForce RTX 4090 & torch.float32 & 2.11.0+cu128 & 12.8 & False & /root/autodl-tmp/cs336/assignment1-basics/cs336\_basics/Transformer/Scaled\_dot\_product\_function.py & False & 5 & 100 & 0 & ok & complete & -- & eager & -- & -- & 652.086 & eager 手写 softmax；compiled 以实测显存为准 & 30.440 & 0.092 & 74.218 & 0.141 & 144.250 & 4273.000 & 4128.750 & 8337.000 & 12497.000 & 2048.000 & 96.000 & 4096.750 & 4128.750 & 4256.750 & 274877906944 & 549755813888 \\
+\bottomrule
+\end{tabular}

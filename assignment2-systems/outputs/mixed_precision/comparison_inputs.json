@@ -1,0 +1,6 @@
+{
+  "outputs/benchmark/small_train_stages.csv": "f736f4392b1cbcaade20805ca1ae594abbb6b1fb73830ead4bf0a984653cf179",
+  "outputs/mixed_precision/small_bf16_train_stages.csv": "74bf7c1ea2418e1165f61738d5a065948aa3fc1ea04a9862abc9355313d76e02",
+  "outputs/benchmark/medium_train_stages.csv": "138ef5e5531ed71ec12c03a6706b1851b28bd92e64a6aa9c50f403ec79a24669",
+  "outputs/mixed_precision/medium_bf16_train_stages.csv": "2739609acd3be5971a3a776c12357a827ecb2f04a2be1151ac9b4db652e8a0d5"
+}

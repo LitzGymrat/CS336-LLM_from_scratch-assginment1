@@ -1,0 +1,16 @@
+{
+  "medium_forward.csv": "674da87bdd01d7b0c672cc94a6b1b9c756a007b5f485c82dbf452555c6ce449e",
+  "medium_forward_backward.csv": "7a6a39f9e2f070c4c3113f81276c3f79bfe0b4185b039bee71fb3bb0af83fb4f",
+  "medium_train.csv": "1139d4a0eb093fc5faf4db83c41ec988b2579d793e098038c6f75c97ce0028f9",
+  "medium_train_stages.csv": "138ef5e5531ed71ec12c03a6706b1851b28bd92e64a6aa9c50f403ec79a24669",
+  "medium_train_stages_w0.csv": "4d18a62b7298e1e74a28d4007afdaedebbf1de0d008733c2ef65964650aab4b4",
+  "medium_train_stages_w1.csv": "fbbc593569ecdc44fb5a15313c47e0a276735351fcb4a280db60bdb663d73dcd",
+  "medium_train_stages_w2.csv": "b64bbc755b89a21d4c1819f7edd0d90323fad747a1c2a4a958decf5478abfc2f",
+  "small_forward.csv": "0412095978015bb10ca197af2e126f1beecf087c4212bb062aafe7b1249d936d",
+  "small_forward_backward.csv": "5075d4d9dbb62018f83586b03ac3c1035dfa83cd7da21f2a61cf731144004908",
+  "small_train.csv": "a557694ec6ca54b3b71ef174b111f948bce238835b9cbb7c605a94e0f3663da0",
+  "small_train_stages.csv": "f736f4392b1cbcaade20805ca1ae594abbb6b1fb73830ead4bf0a984653cf179",
+  "small_train_stages_w0.csv": "4cbc2a066d26e2b2b2848dec7992291994e55eccfd48f183c3cea0b76d90bfbb",
+  "small_train_stages_w1.csv": "0a6028ad2ad87dc92bebfbed9a76b0ffa14f6ad2c6d7771058bbeabdf2e4ecf8",
+  "small_train_stages_w2.csv": "7faa89192fe7663f81366cccdb286ea663ce9b72844f4acf60167cc86e7f5c15"
+}

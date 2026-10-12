@@ -1,0 +1,10 @@
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npz binary
+*.pt binary
+*.pth binary
+*.pickle binary
+*.nsys-rep binary
+*.sqlite binary

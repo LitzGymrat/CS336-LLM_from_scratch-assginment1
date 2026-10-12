@@ -1,0 +1,42 @@
+{
+  "scope": "medium / batch=4 / context=512 / FP32\uff0c\u6d4b\u9884\u6d4b\u6700\u4f18\u5206\u7ec4\u548c\u4e24\u79cd\u76f8\u90bb\u5206\u7ec4\u3002",
+  "runs": [
+    {
+      "command": [
+        "/root/autodl-tmp/cs336/assignment2-systems/.venv/bin/python",
+        "-m",
+        "cs336_systems.profile_gradient_checkpointing",
+        "--output_prefix",
+        "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_predicted"
+      ],
+      "exit_code": 0,
+      "log": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_predicted.log"
+    },
+    {
+      "command": [
+        "/root/autodl-tmp/cs336/assignment2-systems/.venv/bin/python",
+        "-m",
+        "cs336_systems.profile_gradient_checkpointing",
+        "--output_prefix",
+        "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g2",
+        "--group_size",
+        "2"
+      ],
+      "exit_code": 0,
+      "log": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g2.log"
+    },
+    {
+      "command": [
+        "/root/autodl-tmp/cs336/assignment2-systems/.venv/bin/python",
+        "-m",
+        "cs336_systems.profile_gradient_checkpointing",
+        "--output_prefix",
+        "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g3",
+        "--group_size",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g3.log"
+    }
+  ]
+}

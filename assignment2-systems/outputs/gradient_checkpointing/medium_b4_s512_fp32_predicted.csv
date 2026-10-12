@@ -1,0 +1,2 @@
+num_layers,group_size,checkpoint_count,single_checkpoint_mib,single_block_internal_mib,activation_estimate_mib,total_estimate_gib,peak_allocated_gib,peak_reserved_gib
+24,1,24,8.0,360.890625,552.890625,3.5666656494140625,3.681049346923828,3.884765625

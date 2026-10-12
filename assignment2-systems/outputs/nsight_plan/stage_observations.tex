@@ -1,0 +1,61 @@
+\begin{tabular}{llrllrrrrrrrrl}
+\toprule
+config\_id & model & seq\_len & mode & scope & steps & gpu\_span\_mean\_ms & gpu\_span\_std\_ms & gpu\_kernel\_sum\_mean\_ms & matmul\_gpu\_mean\_ms & other\_kernel\_gpu\_mean\_ms & matmul\_percent & other\_kernel\_percent & source\_report \\
+\midrule
+C2 & small & 512 & forward & total & 10 & 26.335 & 0.279 & 24.048 & 15.724 & 8.324 & 65.385 & 34.615 & outputs/nsight\_run/profiles/small\_s512\_forward.nsys-rep \\
+C2 & small & 512 & forward & forward & 10 & 26.335 & 0.279 & 24.048 & 15.724 & 8.324 & 65.385 & 34.615 & outputs/nsight\_run/profiles/small\_s512\_forward.nsys-rep \\
+C2 & small & 512 & forward\_backward & total & 10 & 87.111 & 3.626 & 80.127 & 45.208 & 34.919 & 56.420 & 43.580 & outputs/nsight\_run/profiles/small\_s512\_forward\_backward.nsys-rep \\
+C2 & small & 512 & forward\_backward & forward & 10 & 29.105 & 3.531 & 24.396 & 16.124 & 8.272 & 66.092 & 33.908 & outputs/nsight\_run/profiles/small\_s512\_forward\_backward.nsys-rep \\
+C2 & small & 512 & forward\_backward & loss & 10 & 0.525 & 0.002 & 0.520 & 0.000 & 0.520 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s512\_forward\_backward.nsys-rep \\
+C2 & small & 512 & forward\_backward & backward & 10 & 57.480 & 0.146 & 55.211 & 29.084 & 26.127 & 52.678 & 47.322 & outputs/nsight\_run/profiles/small\_s512\_forward\_backward.nsys-rep \\
+C2 & small & 512 & train & total & 10 & 95.068 & 1.355 & 88.408 & 45.063 & 43.345 & 50.971 & 49.029 & outputs/nsight\_run/profiles/small\_s512\_train.nsys-rep \\
+C2 & small & 512 & train & forward & 10 & 27.691 & 1.359 & 24.328 & 16.076 & 8.252 & 66.081 & 33.919 & outputs/nsight\_run/profiles/small\_s512\_train.nsys-rep \\
+C2 & small & 512 & train & loss & 10 & 0.522 & 0.002 & 0.517 & 0.000 & 0.517 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s512\_train.nsys-rep \\
+C2 & small & 512 & train & backward & 10 & 57.333 & 0.155 & 55.039 & 28.987 & 26.052 & 52.666 & 47.334 & outputs/nsight\_run/profiles/small\_s512\_train.nsys-rep \\
+C2 & small & 512 & train & optimizer & 10 & 9.520 & 0.016 & 8.525 & 0.000 & 8.525 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s512\_train.nsys-rep \\
+C1 & small & 256 & forward & total & 10 & 21.616 & 3.040 & 10.774 & 8.019 & 2.754 & 74.434 & 25.566 & outputs/nsight\_run/profiles/small\_s256\_forward.nsys-rep \\
+C1 & small & 256 & forward & forward & 10 & 21.616 & 3.040 & 10.774 & 8.019 & 2.754 & 74.434 & 25.566 & outputs/nsight\_run/profiles/small\_s256\_forward.nsys-rep \\
+C1 & small & 256 & forward\_backward & total & 10 & 63.142 & 8.073 & 34.082 & 23.296 & 10.786 & 68.353 & 31.647 & outputs/nsight\_run/profiles/small\_s256\_forward\_backward.nsys-rep \\
+C1 & small & 256 & forward\_backward & forward & 10 & 24.511 & 5.253 & 10.590 & 7.952 & 2.637 & 75.096 & 24.904 & outputs/nsight\_run/profiles/small\_s256\_forward\_backward.nsys-rep \\
+C1 & small & 256 & forward\_backward & loss & 10 & 0.137 & 0.001 & 0.132 & 0.000 & 0.132 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s256\_forward\_backward.nsys-rep \\
+C1 & small & 256 & forward\_backward & backward & 10 & 38.493 & 4.001 & 23.361 & 15.344 & 8.017 & 65.682 & 34.318 & outputs/nsight\_run/profiles/small\_s256\_forward\_backward.nsys-rep \\
+C1 & small & 256 & train & total & 10 & 75.527 & 2.356 & 42.635 & 23.330 & 19.305 & 54.720 & 45.280 & outputs/nsight\_run/profiles/small\_s256\_train.nsys-rep \\
+C1 & small & 256 & train & forward & 10 & 18.984 & 0.683 & 10.592 & 7.963 & 2.629 & 75.176 & 24.824 & outputs/nsight\_run/profiles/small\_s256\_train.nsys-rep \\
+C1 & small & 256 & train & loss & 10 & 0.134 & 0.001 & 0.129 & 0.000 & 0.129 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s256\_train.nsys-rep \\
+C1 & small & 256 & train & backward & 10 & 37.863 & 1.116 & 23.384 & 15.367 & 8.017 & 65.716 & 34.284 & outputs/nsight\_run/profiles/small\_s256\_train.nsys-rep \\
+C1 & small & 256 & train & optimizer & 10 & 17.525 & 1.977 & 8.529 & 0.000 & 8.529 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s256\_train.nsys-rep \\
+C3 & small & 1024 & forward & total & 10 & 80.719 & 0.103 & 74.125 & 34.210 & 39.915 & 46.152 & 53.848 & outputs/nsight\_run/profiles/small\_s1024\_forward.nsys-rep \\
+C3 & small & 1024 & forward & forward & 10 & 80.719 & 0.103 & 74.125 & 34.210 & 39.915 & 46.152 & 53.848 & outputs/nsight\_run/profiles/small\_s1024\_forward.nsys-rep \\
+C3 & small & 1024 & forward\_backward & total & 10 & 243.829 & 0.321 & 230.451 & 93.126 & 137.325 & 40.410 & 59.590 & outputs/nsight\_run/profiles/small\_s1024\_forward\_backward.nsys-rep \\
+C3 & small & 1024 & forward\_backward & forward & 10 & 80.921 & 0.181 & 74.234 & 34.326 & 39.908 & 46.240 & 53.760 & outputs/nsight\_run/profiles/small\_s1024\_forward\_backward.nsys-rep \\
+C3 & small & 1024 & forward\_backward & loss & 10 & 1.122 & 0.001 & 1.117 & 0.000 & 1.117 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s1024\_forward\_backward.nsys-rep \\
+C3 & small & 1024 & forward\_backward & backward & 10 & 161.785 & 0.167 & 155.101 & 58.800 & 96.300 & 37.911 & 62.089 & outputs/nsight\_run/profiles/small\_s1024\_forward\_backward.nsys-rep \\
+C3 & small & 1024 & train & total & 10 & 253.638 & 0.209 & 239.038 & 93.119 & 145.919 & 38.956 & 61.044 & outputs/nsight\_run/profiles/small\_s1024\_train.nsys-rep \\
+C3 & small & 1024 & train & forward & 10 & 81.084 & 0.239 & 74.229 & 34.325 & 39.903 & 46.243 & 53.757 & outputs/nsight\_run/profiles/small\_s1024\_train.nsys-rep \\
+C3 & small & 1024 & train & loss & 10 & 1.121 & 0.001 & 1.116 & 0.000 & 1.116 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s1024\_train.nsys-rep \\
+C3 & small & 1024 & train & backward & 10 & 161.904 & 0.092 & 155.164 & 58.794 & 96.370 & 37.892 & 62.108 & outputs/nsight\_run/profiles/small\_s1024\_train.nsys-rep \\
+C3 & small & 1024 & train & optimizer & 10 & 9.528 & 0.012 & 8.530 & 0.000 & 8.530 & 0.000 & 100.000 & outputs/nsight\_run/profiles/small\_s1024\_train.nsys-rep \\
+C5 & medium & 512 & forward & total & 10 & 81.805 & 0.287 & 75.787 & 47.865 & 27.923 & 63.157 & 36.843 & outputs/nsight\_run/profiles/medium\_s512\_forward.nsys-rep \\
+C5 & medium & 512 & forward & forward & 10 & 81.805 & 0.287 & 75.787 & 47.865 & 27.923 & 63.157 & 36.843 & outputs/nsight\_run/profiles/medium\_s512\_forward.nsys-rep \\
+C5 & medium & 512 & forward\_backward & total & 10 & 247.974 & 0.347 & 235.850 & 129.538 & 106.312 & 54.924 & 45.076 & outputs/nsight\_run/profiles/medium\_s512\_forward\_backward.nsys-rep \\
+C5 & medium & 512 & forward\_backward & forward & 10 & 81.767 & 0.172 & 76.104 & 48.217 & 27.887 & 63.357 & 36.643 & outputs/nsight\_run/profiles/medium\_s512\_forward\_backward.nsys-rep \\
+C5 & medium & 512 & forward\_backward & loss & 10 & 0.514 & 0.002 & 0.508 & 0.000 & 0.508 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s512\_forward\_backward.nsys-rep \\
+C5 & medium & 512 & forward\_backward & backward & 10 & 165.691 & 0.183 & 159.237 & 81.321 & 77.917 & 51.069 & 48.931 & outputs/nsight\_run/profiles/medium\_s512\_forward\_backward.nsys-rep \\
+C5 & medium & 512 & train & total & 10 & 278.949 & 0.158 & 264.749 & 129.313 & 135.436 & 48.844 & 51.156 & outputs/nsight\_run/profiles/medium\_s512\_train.nsys-rep \\
+C5 & medium & 512 & train & forward & 10 & 81.748 & 0.099 & 75.890 & 48.035 & 27.855 & 63.296 & 36.704 & outputs/nsight\_run/profiles/medium\_s512\_train.nsys-rep \\
+C5 & medium & 512 & train & loss & 10 & 0.513 & 0.002 & 0.508 & 0.000 & 0.508 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s512\_train.nsys-rep \\
+C5 & medium & 512 & train & backward & 10 & 165.616 & 0.095 & 159.207 & 81.278 & 77.929 & 51.052 & 48.948 & outputs/nsight\_run/profiles/medium\_s512\_train.nsys-rep \\
+C5 & medium & 512 & train & optimizer & 10 & 31.070 & 0.036 & 29.145 & 0.000 & 29.145 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s512\_train.nsys-rep \\
+C4 & medium & 256 & forward & total & 10 & 42.821 & 3.821 & 31.596 & 24.686 & 6.910 & 78.129 & 21.871 & outputs/nsight\_run/profiles/medium\_s256\_forward.nsys-rep \\
+C4 & medium & 256 & forward & forward & 10 & 42.821 & 3.821 & 31.596 & 24.686 & 6.910 & 78.129 & 21.871 & outputs/nsight\_run/profiles/medium\_s256\_forward.nsys-rep \\
+C4 & medium & 256 & forward\_backward & total & 10 & 125.272 & 1.832 & 94.306 & 65.569 & 28.737 & 69.528 & 30.472 & outputs/nsight\_run/profiles/medium\_s256\_forward\_backward.nsys-rep \\
+C4 & medium & 256 & forward\_backward & forward & 10 & 48.672 & 0.313 & 31.673 & 24.827 & 6.846 & 78.385 & 21.615 & outputs/nsight\_run/profiles/medium\_s256\_forward\_backward.nsys-rep \\
+C4 & medium & 256 & forward\_backward & loss & 10 & 0.132 & 0.001 & 0.127 & 0.000 & 0.127 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s256\_forward\_backward.nsys-rep \\
+C4 & medium & 256 & forward\_backward & backward & 10 & 76.466 & 1.763 & 62.507 & 40.743 & 21.764 & 65.181 & 34.819 & outputs/nsight\_run/profiles/medium\_s256\_forward\_backward.nsys-rep \\
+C4 & medium & 256 & train & total & 10 & 150.067 & 5.865 & 122.997 & 64.848 & 58.149 & 52.723 & 47.277 & outputs/nsight\_run/profiles/medium\_s256\_train.nsys-rep \\
+C4 & medium & 256 & train & forward & 10 & 40.090 & 3.086 & 31.893 & 25.012 & 6.880 & 78.426 & 21.574 & outputs/nsight\_run/profiles/medium\_s256\_train.nsys-rep \\
+C4 & medium & 256 & train & loss & 10 & 0.133 & 0.001 & 0.128 & 0.000 & 0.128 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s256\_train.nsys-rep \\
+C4 & medium & 256 & train & backward & 10 & 76.473 & 6.097 & 61.827 & 39.836 & 21.992 & 64.430 & 35.570 & outputs/nsight\_run/profiles/medium\_s256\_train.nsys-rep \\
+C4 & medium & 256 & train & optimizer & 10 & 31.628 & 1.329 & 29.149 & 0.000 & 29.149 & 0.000 & 100.000 & outputs/nsight\_run/profiles/medium\_s256\_train.nsys-rep \\
+\bottomrule
+\end{tabular}

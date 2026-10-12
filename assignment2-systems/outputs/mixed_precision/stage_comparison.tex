@@ -1,0 +1,12 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+model & stage & fp32\_mean\_ms & fp32\_std\_ms & bf16\_mean\_ms & bf16\_std\_ms & speedup & time\_reduction\_pct \\
+\midrule
+small & forward\_with\_loss & 27.037 & 0.068 & 19.363 & 1.433 & 1.396 & 28.382 \\
+small & backward & 58.473 & 0.226 & 34.806 & 1.173 & 1.680 & 40.475 \\
+small & optimizer & 13.195 & 3.369 & 12.219 & 1.305 & 1.080 & 7.401 \\
+medium & forward\_with\_loss & 81.184 & 0.069 & 43.068 & 3.983 & 1.885 & 46.951 \\
+medium & backward & 167.384 & 0.472 & 89.553 & 0.547 & 1.869 & 46.499 \\
+medium & optimizer & 30.929 & 0.081 & 31.011 & 0.195 & 0.997 & -0.263 \\
+\bottomrule
+\end{tabular}

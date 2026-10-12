@@ -1,0 +1,17 @@
+Implementation: /root/autodl-tmp/cs336/assignment2-systems/cs336_systems/flash_attention2_triton.py
+torch: 2.11.0+cu128, Triton: 3.6.0, GPU: NVIDIA GeForce RTX 4090
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.0.3, pluggy-1.6.0 -- /root/autodl-tmp/cs336/assignment2-systems/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /root/autodl-tmp/cs336/assignment2-systems
+configfile: pyproject.toml
+plugins: jaxtyping-0.3.9, timeout-2.4.0
+collecting ... collected 4 items
+
+tests/test_attention.py::test_flash_forward_pass_triton[False] PASSED
+tests/test_attention.py::test_flash_forward_pass_triton[True] PASSED
+tests/test_attention.py::test_flash_backward_triton[False] PASSED
+tests/test_attention.py::test_flash_backward_triton[True] PASSED
+
+- generated xml file: /root/autodl-tmp/cs336/assignment2-systems/outputs/verification/flash_backward_20261010T123206Z/pytest.xml -
+============================== 4 passed in 7.16s ===============================

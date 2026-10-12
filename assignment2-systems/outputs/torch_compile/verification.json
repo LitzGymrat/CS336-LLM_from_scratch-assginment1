@@ -1,0 +1,20 @@
+[
+  {
+    "case": "attention_b8_s8192_d128",
+    "status": "passed",
+    "output_max_abs_error": 7.82310962677002e-08,
+    "gradient_max_abs_errors": [
+      1.564621925354004e-07,
+      1.564621925354004e-07,
+      6.705522537231445e-08
+    ]
+  },
+  {
+    "case": "medium_b4_s512",
+    "status": "passed",
+    "logits_max_abs_error": 3.0994415283203125e-06,
+    "loss_abs_error": 0.0,
+    "gradient_max_abs_error": 2.561137080192566e-09,
+    "parameter_tensors_checked": 219
+  }
+]

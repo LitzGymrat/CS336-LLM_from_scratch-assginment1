@@ -1,0 +1,35 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=2048, batch_size=4, device='cuda', lr=0.001, steps=2, warmup=1, mode='train', output_prefix='outputs/nsight_run/memory_probes/small_s2048_train', nvtx=False)
+peak_allocated_GiB=22.031
+peak_reserved_GiB=22.561
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cs336/assignment2-systems/measure_gpu_memory.py", line 13, in <module>
+    main()
+  File "/root/autodl-tmp/cs336/assignment2-systems/cs336_systems/benchmark.py", line 242, in main
+    benchmark(
+  File "/root/autodl-tmp/cs336/assignment2-systems/cs336_systems/benchmark.py", line 181, in benchmark
+    run_step(model,rand_input,rand_target,warmup_mode,optimizer)
+  File "/root/autodl-tmp/cs336/assignment2-systems/cs336_systems/benchmark.py", line 58, in run_step
+    out_logits = model.forward(input)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Transformer_lm.py", line 42, in forward
+    x = layer.forward(x,token_positions)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Transformer_block.py", line 37, in forward
+    y_1 = x + self.msa(self.rmsnorm_1(x),token_positions)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Multihead_self_attention_module.py", line 72, in forward
+    head_outputs = scaled_dot_product_attention(Q,K,V,mask)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py", line 23, in scaled_dot_product_attention
+    attention_scores = softmax(scaled_dot_product,dim = -1)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py", line 11, in softmax
+    shifted_exp = torch.exp(shifted_x)
+                  ^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 548.69 MiB is free. Including non-PyTorch memory, this process has 22.97 GiB memory in use. Of the allocated memory 22.03 GiB is allocated by PyTorch, and 506.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

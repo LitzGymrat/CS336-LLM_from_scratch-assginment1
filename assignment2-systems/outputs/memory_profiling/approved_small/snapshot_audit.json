@@ -1,0 +1,517 @@
+{
+  "source_directory": "outputs/memory_profiling/small",
+  "snapshots": {
+    "small_b4_s128_fp32_forward.pickle": {
+      "event_count": 4440,
+      "requested_peak_bytes": 553307136,
+      "largest_new_allocations": [
+        {
+          "bytes": 20480000,
+          "mib": 19.53125,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 6291456,
+          "mib": 6.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 35
+        },
+        {
+          "bytes": 6291456,
+          "mib": 6.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 36
+        },
+        {
+          "bytes": 6291456,
+          "mib": 6.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 40
+        },
+        {
+          "bytes": 6291456,
+          "mib": 6.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 41
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 10
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 22
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 9
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "097367bd54c39d9ed2dbcf865df0be08655964867419b9440b7caafebae0a227"
+    },
+    "small_b4_s128_fp32_train.pickle": {
+      "event_count": 19329,
+      "requested_peak_bytes": 2291239944,
+      "largest_new_allocations": [
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 44
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 46
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 47
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 48
+        },
+        {
+          "bytes": 20480000,
+          "mib": 19.53125,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 20480000,
+          "mib": 19.53125,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 15
+        },
+        {
+          "bytes": 20480000,
+          "mib": 19.53125,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 16
+        },
+        {
+          "bytes": 9437184,
+          "mib": 9.0,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 44
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "c1a2e10a3c40c59506460c9790f4607218c69a89b0cdebc8af7ee08d3b8f5bde"
+    },
+    "small_b4_s128_bf16_forward.pickle": {
+      "event_count": 5605,
+      "requested_peak_bytes": 777874432,
+      "largest_new_allocations": [
+        {
+          "bytes": 15360000,
+          "mib": 14.6484375,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 10240000,
+          "mib": 9.765625,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 4718592,
+          "mib": 4.5,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 35
+        },
+        {
+          "bytes": 4718592,
+          "mib": 4.5,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 40
+        },
+        {
+          "bytes": 4718592,
+          "mib": 4.5,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 42
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 11
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 12
+        },
+        {
+          "bytes": 3145728,
+          "mib": 3.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 35
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "af8b3b23faab9f6e199d0dfd9cf2d2ee63db3b4109fcaa148085244fa1ae304c"
+    },
+    "small_b4_s128_bf16_train.pickle": {
+      "event_count": 22247,
+      "requested_peak_bytes": 2275895304,
+      "largest_new_allocations": [
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 44
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 46
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 47
+        },
+        {
+          "bytes": 30720000,
+          "mib": 29.296875,
+          "name": "step",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/AdamW.py",
+          "line": 48
+        },
+        {
+          "bytes": 20480000,
+          "mib": 19.53125,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 16
+        },
+        {
+          "bytes": 15360000,
+          "mib": 14.6484375,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 10240000,
+          "mib": 9.765625,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 10240000,
+          "mib": 9.765625,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 15
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "2d1a1b3fe52db8261ae18c0387215cb64575ac4ef23a34dd828722966ae2bbfe"
+    },
+    "small_b4_s1024_fp32_forward.pickle": {
+      "event_count": 4440,
+      "requested_peak_bytes": 1396755456,
+      "largest_new_allocations": [
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 10
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 22
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 9
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 11
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 12
+        },
+        {
+          "bytes": 163840000,
+          "mib": 156.25,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 50331648,
+          "mib": 48.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 35
+        },
+        {
+          "bytes": 50331648,
+          "mib": 48.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 36
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "cc0acdd9bf506ca0db4c20d4bbd0f1aa36c5b31d5572fbd4942d64ac79882c76"
+    },
+    "small_b4_s1024_fp32_train.pickle": {
+      "event_count": 19626,
+      "requested_peak_bytes": 11692907528,
+      "largest_new_allocations": [
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 10
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 22
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 9
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 11
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 12
+        },
+        {
+          "bytes": 163840000,
+          "mib": 156.25,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 163840000,
+          "mib": 156.25,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 15
+        },
+        {
+          "bytes": 163840000,
+          "mib": 156.25,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 16
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "defff2acb2271e363e2afed14c1948252428242c0a7ab6d25d32cb441f255947"
+    },
+    "small_b4_s1024_bf16_forward.pickle": {
+      "event_count": 5604,
+      "requested_peak_bytes": 1387711488,
+      "largest_new_allocations": [
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 11
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 12
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 10
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 22
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 9
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 25
+        },
+        {
+          "bytes": 81920000,
+          "mib": 78.125,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        },
+        {
+          "bytes": 25165824,
+          "mib": 24.0,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Swiglu_module.py",
+          "line": 35
+        }
+      ],
+      "recorded_exit_code": 0,
+      "snapshot_sha256": "d6108de5f3b0f956c8f5161ae42db5da957863f7e696f6f82047b34cb88fe6ad"
+    },
+    "small_b4_s1024_bf16_train.pickle": {
+      "event_count": 22546,
+      "requested_peak_bytes": 9110526984,
+      "largest_new_allocations": [
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 11
+        },
+        {
+          "bytes": 201326592,
+          "mib": 192.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 12
+        },
+        {
+          "bytes": 163840000,
+          "mib": 156.25,
+          "name": "cross_entropy",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Training_modules/Crossentropyloss.py",
+          "line": 16
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 10
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 22
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "softmax",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py",
+          "line": 9
+        },
+        {
+          "bytes": 100663296,
+          "mib": 96.0,
+          "name": "scaled_dot_product_attention",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+          "line": 25
+        },
+        {
+          "bytes": 81920000,
+          "mib": 78.125,
+          "name": "forward",
+          "filename": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Linear_module.py",
+          "line": 20
+        }
+      ],
+      "recorded_exit_code": null,
+      "snapshot_sha256": "dcc745c5793683c325e283e8dcb1bd2375d6e84e514c70db6736bc55b3876fcb"
+    }
+  }
+}

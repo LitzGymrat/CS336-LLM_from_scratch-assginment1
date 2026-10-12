@@ -1,0 +1,14 @@
+{
+  "all_four_arrays_verified": true,
+  "implementation_unchanged": true,
+  "all_input_hashes_match_prior_runs": true,
+  "temporary_shards_removed": true,
+  "total_tokens": 3340216780,
+  "total_output_bytes": 6680434072,
+  "total_elapsed_seconds": 2787.670923,
+  "official_tests": {
+    "passed": 26,
+    "skipped": 2,
+    "skip_reason": "Official memory-limit tests require Linux."
+  }
+}

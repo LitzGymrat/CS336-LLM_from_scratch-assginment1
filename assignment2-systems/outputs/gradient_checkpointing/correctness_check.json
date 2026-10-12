@@ -1,0 +1,36 @@
+{
+  "device": "cpu",
+  "torch_version": "2.11.0",
+  "d_model": 32,
+  "d_ff": 128,
+  "num_heads": 4,
+  "num_layers": 3,
+  "batch_size": 2,
+  "context_len": 8,
+  "seed": 0,
+  "checks": [
+    {
+      "group_size": 1,
+      "outputs_match": true,
+      "input_gradients_match": true,
+      "parameter_gradients_match": true
+    },
+    {
+      "group_size": 2,
+      "outputs_match": true,
+      "input_gradients_match": true,
+      "parameter_gradients_match": true
+    },
+    {
+      "group_size": 3,
+      "outputs_match": true,
+      "input_gradients_match": true,
+      "parameter_gradients_match": true
+    }
+  ],
+  "calibration_internal_bytes": 64960,
+  "calibration_storage_count": 25,
+  "theory_best_group_size": 1,
+  "local_source_matches_remote": true,
+  "harness_sha256": "ea05d0bb183e2d5b06f99019df811f35e461d1f4bc996e7f32dd59da738e7fe9"
+}

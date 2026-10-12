@@ -1,0 +1,5 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=1024, batch_size=4, device='cuda', precision='bf16', seed=0, lr=0.001, steps=2, warmup=1, mode='forward', output_prefix='/root/autodl-tmp/cs336/assignment2-systems/outputs/memory_profiling/small/small_b4_s1024_bf16_forward', nvtx=False, memory_profile=True, inference=True)
+显存快照：/root/autodl-tmp/cs336/assignment2-systems/outputs/memory_profiling/small/small_b4_s1024_bf16_forward.pickle
+[total] 每次耗时(ms): [51.43590271472931, 51.066406071186066]
+平均耗时：51.251 ms
+标准差：0.261 ms

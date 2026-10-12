@@ -1,0 +1,6 @@
+#table(
+  columns: 40,
+  align: left,
+  table.header("d_model", "seq_len", "batch_size", "device", "gpu", "dtype", "torch_version", "cuda_version", "tf32_matmul", "attention_source", "causal", "warmup", "steps", "seed", "status", "phase", "error", "implementation", "compile_backend", "compile_mode", "first_call_ms", "memory_estimate_scope", "forward_mean_ms", "forward_std_ms", "backward_mean_ms", "backward_std_ms", "baseline_allocated_mib", "before_backward_allocated_mib", "forward_retained_extra_mib", "forward_peak_allocated_mib", "backward_peak_allocated_mib", "attention_matrix_mib", "qkv_mib", "saved_extra_estimate_mib", "forward_retained_extra_estimate_mib", "before_backward_estimate_mib", "forward_matmul_flops", "backward_matmul_flops", "compiled_graphs", "graph_breaks"),
+  "128", "8192", "8", "cuda", "NVIDIA GeForce RTX 4090", "torch.float32", "2.11.0+cu128", "12.8", "False", "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py", "False", "5", "100", "0", "ok", "complete", "--", "compiled", "inductor", "default", "2268.803", "eager 手写 softmax；compiled 以实测显存为准", "12.052", "0.127", "32.473", "0.154", "144.25", "4273.25", "4129.0", "4273.25", "8401.25", "2048.0", "96.0", "4096.75", "4128.75", "4256.75", "274877906944", "549755813888", "1", "0",
+)

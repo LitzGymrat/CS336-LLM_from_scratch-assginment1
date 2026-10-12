@@ -1,0 +1,16 @@
+{
+  "batch_size": 8,
+  "seq_len": 16384,
+  "d_model": 16,
+  "dtype": "torch.float32",
+  "status": "oom",
+  "phase": "forward",
+  "purpose": "one diagnostic pass, excluded from the 100-pass timing table",
+  "error": "CUDA out of memory. Tried to allocate 8.00 GiB. GPU 0 has a total capacity of 23.52 GiB of which 7.00 GiB is free. Including non-PyTorch memory, this process has 16.51 GiB memory in use. Of the allocated memory 16.04 GiB is allocated by PyTorch, and 20.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 20, in <module>\n  File \"/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py\", line 23, in scaled_dot_product_attention\n    attention_scores = softmax(scaled_dot_product,dim = -1)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py\", line 11, in softmax\n    shifted_exp = torch.exp(shifted_x)\n                  ^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.00 GiB. GPU 0 has a total capacity of 23.52 GiB of which 7.00 GiB is free. Including non-PyTorch memory, this process has 16.51 GiB memory in use. Of the allocated memory 16.04 GiB is allocated by PyTorch, and 20.88 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+  "profile_phase": "measurement",
+  "measurement_start_allocated_bytes": 0,
+  "peak_allocated_bytes": 17223516160,
+  "peak_reserved_bytes": 17244880896,
+  "snapshot_path": "outputs/pytorch_attention/oom_d16_s16384.pickle"
+}

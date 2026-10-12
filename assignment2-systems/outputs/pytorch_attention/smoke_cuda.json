@@ -1,0 +1,48 @@
+[
+  {
+    "d_model": 16,
+    "seq_len": 256,
+    "batch_size": 8,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "dtype": "torch.float32",
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "tf32_matmul": false,
+    "attention_source": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+    "causal": false,
+    "warmup": 1,
+    "steps": 3,
+    "seed": 0,
+    "status": "ok",
+    "phase": "complete",
+    "error": null,
+    "forward_mean_ms": 0.6625987589359283,
+    "forward_std_ms": 0.4288812980246178,
+    "backward_mean_ms": 0.7848640282948812,
+    "backward_std_ms": 0.21291432642437721,
+    "baseline_allocated_mib": 16.75,
+    "before_backward_allocated_mib": 20.8984375,
+    "forward_retained_extra_mib": 4.1484375,
+    "forward_peak_allocated_mib": 24.7734375,
+    "backward_peak_allocated_mib": 29.0234375,
+    "forward_samples_ms": [
+      1.2680664658546448,
+      0.3909356892108917,
+      0.32879412174224854
+    ],
+    "backward_samples_ms": [
+      1.0759532451629639,
+      0.7060207426548004,
+      0.5726180970668793
+    ],
+    "attention_matrix_mib": 2.0,
+    "qkv_mib": 0.375,
+    "saved_extra_estimate_mib": 4.0234375,
+    "forward_retained_extra_estimate_mib": 4.1484375,
+    "before_backward_estimate_mib": 4.6484375,
+    "forward_matmul_flops": 33554432,
+    "backward_matmul_flops": 67108864,
+    "snapshot_path": "outputs/pytorch_attention/smoke_cuda_d16_s256.pickle"
+  }
+]

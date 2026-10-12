@@ -1,0 +1,20 @@
+{
+  "profile": "outputs/nsight_run/profiles/medium_s512_forward.nsys-rep",
+  "nvtx_counts": {
+    "attention": 240,
+    "attention_softmax": 240,
+    "forward": 10,
+    "measurement": 1,
+    "step": 10
+  },
+  "expected_counts": {
+    "measurement": 1,
+    "step": 10,
+    "forward": 10,
+    "attention": 240,
+    "attention_softmax": 240
+  },
+  "kernel_events": 14480,
+  "formal_steps": 10,
+  "valid": true
+}

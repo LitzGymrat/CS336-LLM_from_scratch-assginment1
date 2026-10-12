@@ -1,0 +1,7 @@
+model,mode,precision,batch_size,longest_success_seq_len,first_oom_seq_len,success_peak_allocated_gib,success_peak_reserved_gib,success_log,oom_log,profile_longest_success_seq_len
+small,forward,torch.float32,4,1024,2048,9.423,9.516,outputs/nsight_run/logs/probe_small_s1024_forward.log,outputs/nsight_run/logs/probe_small_s2048_forward.log,1024
+small,forward_backward,torch.float32,4,1024,2048,9.934,10.541,outputs/nsight_run/logs/probe_small_s1024_forward_backward.log,outputs/nsight_run/logs/probe_small_s2048_forward_backward.log,1024
+small,train,torch.float32,4,1024,2048,10.904,11.566,outputs/nsight_run/logs/probe_small_s1024_train.log,outputs/nsight_run/logs/probe_small_s2048_train.log,1024
+medium,forward,torch.float32,4,512,1024,,,outputs/benchmark/medium_forward.csv,outputs/nsight_run/logs/probe_medium_s1024_forward.log,512
+medium,forward_backward,torch.float32,4,512,1024,,,outputs/benchmark/medium_forward_backward.csv,outputs/nsight_run/logs/probe_medium_s1024_forward_backward.log,512
+medium,train,torch.float32,4,512,1024,,,outputs/benchmark/medium_train.csv,outputs/nsight_run/logs/probe_medium_s1024_train.log,512

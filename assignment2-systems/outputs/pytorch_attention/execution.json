@@ -1,0 +1,27 @@
+{
+  "completed_at_utc": "2026-10-08T11:55:41.445834+00:00",
+  "command": "uv run python -u -m cs336_systems.benchmark_attention",
+  "formal_exit_code": 0,
+  "diagnostic_exit_code": 0,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "device_total_memory_bytes": 25250627584,
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "source_origins": {
+    "benchmark_attention.py": "/root/autodl-tmp/cs336/assignment2-systems/cs336_systems/benchmark_attention.py",
+    "Scaled_dot_product_function.py": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+    "SoftMax_function.py": "/root/autodl-tmp/cs336/assignment1-basics/cs336_basics/Transformer/SoftMax_function.py"
+  },
+  "sha256": {
+    "attention.csv": "be4f99d8954338cab22a1fbf98b173ab887ef53bf83aaa3b9467ed9fca040536",
+    "attention.json": "ce466db84815b8eee489f38c4a681a25e75e6ebed1581588e459312d86636eab",
+    "attention.tex": "3d127f66cf1f91475a289a475d64fc30d7ebebd8ef807b10136621764f62471e",
+    "attention.typ": "60c507bb52c200a13ab3ea41b6e879c60f03c211ddfed275f239016a26a0b545",
+    "oom_d16_s16384.pickle": "b7eff3ecdc6c54ececc8685285c92118bd86756797569878e43b9fe6264f0eaf",
+    "oom_d16_s16384.memory.json": "5e69e10dff714aa08716f858314f09ec09983871ea3b08e4bd8b439566fe33b5",
+    "oom_d16_s16384.diagnostic.json": "0a40660a2d7d65bcdd42c587ee5b9e61777a3dd8a61cbc4fece9e846e1331abb",
+    "source_snapshot/benchmark_attention.py": "720f28ba35a954834e660e511d19f555fcebcf3cceee1504d1552f2ceb2052b9",
+    "source_snapshot/Scaled_dot_product_function.py": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5",
+    "source_snapshot/SoftMax_function.py": "d40686226b0035dd5bc66d745e7c840628c1f08124d86be4e2fe4d8b2f0815e1"
+  }
+}

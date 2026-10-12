@@ -1,0 +1,7 @@
+\begin{tabular}{rrrlllllrlrrrrllllllrlrrrrlllllrrrrrrr}
+\toprule
+d\_model & seq\_len & batch\_size & device & gpu & dtype & torch\_version & cuda\_version & tf32\_matmul & attention\_source & causal & warmup & steps & seed & status & phase & error & implementation & compile\_backend & compile\_mode & first\_call\_ms & memory\_estimate\_scope & forward\_mean\_ms & forward\_std\_ms & backward\_mean\_ms & backward\_std\_ms & baseline\_allocated\_mib & before\_backward\_allocated\_mib & forward\_retained\_extra\_mib & forward\_peak\_allocated\_mib & backward\_peak\_allocated\_mib & attention\_matrix\_mib & qkv\_mib & saved\_extra\_estimate\_mib & forward\_retained\_extra\_estimate\_mib & before\_backward\_estimate\_mib & forward\_matmul\_flops & backward\_matmul\_flops \\
+\midrule
+8 & 16 & 8 & cpu & -- & torch.float32 & 2.11.0 & -- & False & /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/cs336\_basics/Transformer/Scaled\_dot\_product\_function.py & False & 1 & 2 & 0 & ok & complete & -- & eager & -- & -- & 178.685 & eager 手写 softmax；compiled 以实测显存为准 & 0.089 & 0.000 & 0.102 & 0.012 & -- & -- & -- & -- & -- & 0.008 & 0.012 & 0.017 & 0.021 & 0.037 & 65536 & 131072 \\
+\bottomrule
+\end{tabular}

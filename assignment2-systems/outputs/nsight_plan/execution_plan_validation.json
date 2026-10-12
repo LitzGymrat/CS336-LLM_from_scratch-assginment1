@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "profiles": 18,
+  "initial_capacity_probes": 9,
+  "new_python_baselines": 0,
+  "validated": "all CLI arguments with current parser; original successful length-512 CSVs checked; core source hashes unchanged",
+  "execution_status": "completed",
+  "attention_labels_status": "pending_first_execution_step",
+  "source_sha256": {
+    "assignment2-systems/cs336_systems/benchmark.py": "6e90a1a268f8fc54ae09cb1bc784ad13f5c3277fe9ff320b96481be6ea91cd0d",
+    "assignment2-systems/measure_gpu_memory.py": "4f48beb2f55425ddf6fd6d3647286a367856eeeeaf98cd2482ca858758e28d44",
+    "assignment1-basics/cs336_basics/Transformer/Embedding_module.py": "8295e87789285fada02da482bf6a14a647ea11a2261dd9f23d24be2e42c3e515",
+    "assignment1-basics/cs336_basics/Transformer/Linear_module.py": "f15a0c7e72a1be3f355125751b59c834dbbda083e34066a79c1554d9bf610aea",
+    "assignment1-basics/cs336_basics/Transformer/Multihead_self_attention_module.py": "26df5539695b56ff232bbdf9875578284956a528abab84875bc98de0d56bf1eb",
+    "assignment1-basics/cs336_basics/Transformer/RMSNorm_module.py": "e67f6757016dc1ad0ebf3520d50eb39ca0dc5128efd34d4a4ced79f07152fffa",
+    "assignment1-basics/cs336_basics/Transformer/RoPE_module.py": "c1679d91bc908447b72e82ede2c68a4f80017a710ac61e6f6c963eaadb213a09",
+    "assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5",
+    "assignment1-basics/cs336_basics/Transformer/SoftMax_function.py": "d40686226b0035dd5bc66d745e7c840628c1f08124d86be4e2fe4d8b2f0815e1",
+    "assignment1-basics/cs336_basics/Transformer/Swiglu_module.py": "9ceeb9459439756812ba56c8b86ef9e4250888b01ae042f89c2b319e3885eb4d",
+    "assignment1-basics/cs336_basics/Transformer/Transformer_block.py": "707fa12727243df3f39eeaf840425e04be914c1e3a63f3c273c19ceeee67d1a5",
+    "assignment1-basics/cs336_basics/Transformer/Transformer_lm.py": "f171570d94fb2fde1c48065cd61e2264940fd7bb086d65c71d3399fce7537390"
+  },
+  "execution_result": {
+    "formal_profiles": 15,
+    "capacity_probes": 9,
+    "medium_successful_lengths": [
+      256,
+      512
+    ],
+    "batch_size": 4,
+    "user_chose_to_keep_batch_4_memory_limit": true,
+    "evidence": "outputs/nsight_run/final_validation.json",
+    "report": "docs/nsight_report.md"
+  }
+}

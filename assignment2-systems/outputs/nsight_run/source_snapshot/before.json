@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/Users/mileszhu/Documents/\u4e2a\u4eba\u9879\u76ee/cs336/assignment2-systems/cs336_systems/benchmark.py",
+    "sha256": "6e90a1a268f8fc54ae09cb1bc784ad13f5c3277fe9ff320b96481be6ea91cd0d"
+  },
+  {
+    "path": "/Users/mileszhu/Documents/\u4e2a\u4eba\u9879\u76ee/cs336/assignment2-systems/measure_gpu_memory.py",
+    "sha256": "4f48beb2f55425ddf6fd6d3647286a367856eeeeaf98cd2482ca858758e28d44"
+  },
+  {
+    "path": "/Users/mileszhu/Documents/\u4e2a\u4eba\u9879\u76ee/cs336/assignment1-basics/cs336_basics/Transformer/Multihead_self_attention_module.py",
+    "sha256": "26df5539695b56ff232bbdf9875578284956a528abab84875bc98de0d56bf1eb"
+  },
+  {
+    "path": "/Users/mileszhu/Documents/\u4e2a\u4eba\u9879\u76ee/cs336/assignment1-basics/cs336_basics/Transformer/Scaled_dot_product_function.py",
+    "sha256": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "measured_strategy_count": 3,
+  "records": [
+    {
+      "group_size": 1,
+      "checkpoint_count": 24,
+      "checkpoint_mib": 192.0,
+      "recomputed_internal_mib": 360.890625,
+      "activation_estimate_mib": 552.890625,
+      "total_estimate_gib": 3.5666656494140625,
+      "peak_allocated_gib": 3.681049346923828,
+      "peak_reserved_gib": 3.884765625,
+      "forward_peak_gib": 2.223590850830078,
+      "elapsed_ms": 313.46187368035316
+    },
+    {
+      "group_size": 2,
+      "checkpoint_count": 12,
+      "checkpoint_mib": 96.0,
+      "recomputed_internal_mib": 721.78125,
+      "activation_estimate_mib": 817.78125,
+      "total_estimate_gib": 3.825347900390625,
+      "peak_allocated_gib": 3.9787864685058594,
+      "peak_reserved_gib": 4.13671875,
+      "forward_peak_gib": 2.137653350830078,
+      "elapsed_ms": 320.434994995594
+    },
+    {
+      "group_size": 3,
+      "checkpoint_count": 8,
+      "checkpoint_mib": 64.0,
+      "recomputed_internal_mib": 1082.671875,
+      "activation_estimate_mib": 1146.671875,
+      "total_estimate_gib": 4.1465301513671875,
+      "peak_allocated_gib": 4.276523590087891,
+      "peak_reserved_gib": 4.4140625,
+      "forward_peak_gib": 2.106403350830078,
+      "elapsed_ms": 321.5051107108593
+    }
+  ],
+  "predicted_group_size": 1,
+  "lowest_measured_group_size": 1,
+  "claim_scope": "minimum among these three measured strategies, not an exhaustive GPU search"
+}

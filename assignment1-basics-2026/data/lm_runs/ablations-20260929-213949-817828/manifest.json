@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-09-29T21:39:49.864269+08:00",
+  "baseline_dir": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/tinystories-train-20260929-124145-511697",
+  "baseline_config": {
+    "vocab_size": 10000,
+    "d_model": 512,
+    "d_ff": 1344,
+    "num_heads": 16,
+    "num_layers": 4,
+    "context_len": 256,
+    "rope_theta": 10000,
+    "batch_size": 32,
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "t_w": 100,
+    "t_c": 4999,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "eps": 1e-08,
+    "max_l2_norm": 1,
+    "training_steps": 5000,
+    "seed": 42,
+    "eval_batches": 4,
+    "overfit_one_batch": false,
+    "train_src": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/tinystories_train.npy",
+    "valid_src": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/tinystories_valid.npy",
+    "device": "mps",
+    "dtype": "torch.float32",
+    "validate_interval": 100,
+    "checkpoint_interval": 1000
+  },
+  "experiments": [
+    {
+      "name": "no-rmsnorm-lr1e-3",
+      "norm_position": "none",
+      "max_lr": 0.001
+    },
+    {
+      "name": "post-norm",
+      "norm_position": "post",
+      "max_lr": 0.001
+    },
+    {
+      "name": "no-rope",
+      "use_rope": false,
+      "max_lr": 0.001
+    },
+    {
+      "name": "silu",
+      "ffn_type": "silu",
+      "max_lr": 0.001
+    },
+    {
+      "name": "no-rmsnorm-lr3e-4",
+      "norm_position": "none",
+      "max_lr": 0.0003
+    },
+    {
+      "name": "no-rmsnorm-lr1e-4",
+      "norm_position": "none",
+      "max_lr": 0.0001
+    }
+  ],
+  "source_sha256": {
+    "run_tinystories_ablations.py": "5e8975846e3f5ae58edbb3e37c2b993638953d2feb98e23620f725673c1a5cf9",
+    "cs336_basics/__init__.py": "687192e9a8eb08caed2ad612b86fbefdaa21229160f613525996f0eada9096dc",
+    "cs336_basics/Training_modules/Crossentropyloss.py": "60b32b8a3f8fb1bb7c8d1ed0d0f420cb292a307f97379aededfc52109f2d4f7b",
+    "cs336_basics/Training_modules/SGD_example.py": "09cafc4393fb705c7bc3c7d135f37ec1d323590e7582e176de0a9fcfc5943290",
+    "cs336_basics/Training_modules/Learning_rate_schedule.py": "88be1a895b7b7cbddfec0088563939ec6b8cff65d2d4b536ff4bcecb1d1ba8e9",
+    "cs336_basics/Training_modules/AdamW.py": "f8da50e3375097200b74d441a09a8d8f1ffaf6d59cd9d6b626b9777bd6f17b8f",
+    "cs336_basics/Training_modules/Gradient_clipping.py": "9d66e2bd6e642f4d677fbd629a89d36b99b63e63207f6b373dfbeb72ceb0167f",
+    "cs336_basics/Training_loop/Checkpoint.py": "f1aae70e0b64dd63bab72ed2550982a6e18e6b0b95d2aaadcb69970a477ba3ad",
+    "cs336_basics/Training_loop/Data_loader.py": "ad23c1f4a69909b991cf05bbdf4fab2f4dc30317dfdd9ebf7dab06d5cce25326",
+    "cs336_basics/Training_loop/Training_loop.py": "cc00d665ce1d8bc6ba067e83616510f7acfcc862a68b8a2028bf2b4b420ff837",
+    "cs336_basics/Transformer/Transformer_block.py": "707fa12727243df3f39eeaf840425e04be914c1e3a63f3c273c19ceeee67d1a5",
+    "cs336_basics/Transformer/RMSNorm_module.py": "e67f6757016dc1ad0ebf3520d50eb39ca0dc5128efd34d4a4ced79f07152fffa",
+    "cs336_basics/Transformer/RoPE_module.py": "c1679d91bc908447b72e82ede2c68a4f80017a710ac61e6f6c963eaadb213a09",
+    "cs336_basics/Transformer/Swiglu_module.py": "9ceeb9459439756812ba56c8b86ef9e4250888b01ae042f89c2b319e3885eb4d",
+    "cs336_basics/Transformer/Scaled_dot_product_function.py": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5",
+    "cs336_basics/Transformer/Multihead_self_attention_module.py": "26df5539695b56ff232bbdf9875578284956a528abab84875bc98de0d56bf1eb",
+    "cs336_basics/Transformer/Transformer_lm.py": "3288aa4241caf47b18542b9cd4c1d900a9f44014572a109d297fffdbe6fe0901",
+    "cs336_basics/Transformer/SoftMax_function.py": "d40686226b0035dd5bc66d745e7c840628c1f08124d86be4e2fe4d8b2f0815e1",
+    "cs336_basics/Transformer/Embedding_module.py": "8295e87789285fada02da482bf6a14a647ea11a2261dd9f23d24be2e42c3e515",
+    "cs336_basics/Transformer/Linear_module.py": "f15a0c7e72a1be3f355125751b59c834dbbda083e34066a79c1554d9bf610aea"
+  },
+  "smoke": false
+}

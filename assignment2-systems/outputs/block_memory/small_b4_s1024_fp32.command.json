@@ -1,0 +1,43 @@
+{
+  "command": [
+    "nsys",
+    "profile",
+    "--trace=cuda,nvtx",
+    "--cuda-memory-usage=true",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--export=sqlite",
+    "--output=/root/autodl-tmp/cs336/assignment2-systems/outputs/block_memory/small_b4_s1024_fp32",
+    "/root/autodl-tmp/cs336/assignment2-systems/.venv/bin/python",
+    "-m",
+    "cs336_systems.profile_block_memory",
+    "--d_model",
+    "768",
+    "--d_ff",
+    "3072",
+    "--num_heads",
+    "12",
+    "--batch_size",
+    "4",
+    "--context_len",
+    "1024",
+    "--rope_theta",
+    "10000.0",
+    "--warmup",
+    "1",
+    "--seed",
+    "0",
+    "--output_prefix",
+    "/root/autodl-tmp/cs336/assignment2-systems/outputs/block_memory/small_b4_s1024_fp32"
+  ],
+  "cwd": "/root/autodl-tmp/cs336/assignment2-systems",
+  "environment_overrides": {
+    "PYTORCH_NO_CUDA_MEMORY_CACHING": "1",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "harness_sha256": {
+    "run_block_memory_profile.py": "566d4417a4920903b0dc0df955b9043e1356c319af487d688a9b72860075da97",
+    "cs336_systems/profile_block_memory.py": "acab4ff92c16a5d99376868766ffa5297470b79bc557b533c2bb3e75c1a17820"
+  },
+  "exit_code": 0
+}

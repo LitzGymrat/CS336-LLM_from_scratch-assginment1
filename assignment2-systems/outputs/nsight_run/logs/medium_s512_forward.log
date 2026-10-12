@@ -1,0 +1,13 @@
+Namespace(d_model=1024, vocab_size=10000, d_ff=4096, num_layers=24, num_heads=16, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=512, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='forward', output_prefix='outputs/nsight_run/profiles/medium_s512_forward_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-638d.qdstrm'
+[1/1] [0%                          ] medium_s512_forward.nsys-repProcessing events...
+[1/1] [0%                          ] medium_s512_forward.nsys-rep[1/1] [6%                          ] medium_s512_forward.nsys-rep[1/1] [12%                         ] medium_s512_forward.nsys-rep[1/1] [============55%             ] medium_s512_forward.nsys-rep[1/1] [========================99% ] medium_s512_forward.nsys-rep[1/1] [========40%                 ] medium_s512_forward.nsys-rep[1/1] [=================74%        ] medium_s512_forward.nsys-rep[1/1] [==================75%       ] medium_s512_forward.nsys-rep[1/1] [========================100%] medium_s512_forward.nsys-rep[1/1] [========================100%] medium_s512_forward.nsys-rep
+[total] 每次耗时(ms): [81.86090365052223, 81.99188858270645, 82.23630860447884, 81.72880485653877, 82.08297193050385, 82.35520496964455, 82.19995722174644, 82.16483518481255, 81.7110724747181, 82.64696970582008]
+平均耗时：82.098 ms
+标准差：0.290 ms
+peak_allocated_GiB=10.335
+peak_reserved_GiB=10.623
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/medium_s512_forward.nsys-rep

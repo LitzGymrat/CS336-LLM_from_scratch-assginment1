@@ -1,0 +1,13 @@
+Namespace(d_model=768, vocab_size=10000, d_ff=3072, num_layers=12, num_heads=12, rope_theta=10000.0, ffn_type='swiglu', norm_position='pre', use_rope=True, context_len=1024, batch_size=4, device='cuda', lr=0.001, steps=10, warmup=5, mode='forward', output_prefix='outputs/nsight_run/profiles/small_s1024_forward_timing', nvtx=True)
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-1fba.qdstrm'
+[1/1] [0%                          ] small_s1024_forward.nsys-repProcessing events...
+[1/1] [0%                          ] small_s1024_forward.nsys-rep[1/1] [8%                          ] small_s1024_forward.nsys-rep[1/1] [=16%                        ] small_s1024_forward.nsys-rep[1/1] [=============58%            ] small_s1024_forward.nsys-rep[1/1] [========================99% ] small_s1024_forward.nsys-rep[1/1] [==================75%       ] small_s1024_forward.nsys-rep[1/1] [==================76%       ] small_s1024_forward.nsys-rep[1/1] [========================100%] small_s1024_forward.nsys-rep[1/1] [========================100%] small_s1024_forward.nsys-rep
+[total] 每次耗时(ms): [81.22704550623894, 80.912996083498, 80.93719184398651, 80.74616268277168, 80.85542172193527, 80.94997704029083, 81.03184029459953, 80.84841817617416, 80.86232841014862, 81.00152015686035]
+平均耗时：80.937 ms
+标准差：0.131 ms
+peak_allocated_GiB=9.423
+peak_reserved_GiB=9.516
+Generated:
+    /root/autodl-tmp/cs336/assignment2-systems/outputs/nsight_run/profiles/small_s1024_forward.nsys-rep

@@ -1,0 +1,11 @@
+\begin{tabular}{lrlrrrlrrrr}
+\toprule
+model & seq\_len & forward\_top\_kernel & forward\_total\_ms\_10\_steps & forward\_calls\_per\_step & forward\_kernel\_percent & forward\_backward\_top\_kernel & forward\_backward\_total\_ms\_10\_steps & forward\_backward\_calls\_per\_step & forward\_backward\_kernel\_percent & same\_top\_kernel \\
+\midrule
+small & 256 & ampere\_sgemm\_128x64\_tn & 74.317 & 85.000 & 68.981 & ampere\_sgemm\_128x64\_tn & 74.097 & 85.000 & 21.741 & True \\
+small & 512 & ampere\_sgemm\_128x64\_tn & 133.083 & 84.000 & 55.341 & ampere\_sgemm\_128x64\_tn & 135.533 & 84.000 & 16.915 & True \\
+small & 1024 & ampere\_sgemm\_128x64\_tn & 259.067 & 84.000 & 34.950 & void at::native::vectorized\_elementwise\_kernel<(int)4, at::native::BinaryFunctor<float, float, float, at::native::binary\_internal::MulFunctor<float>>, std::array<char *, (unsigned long)3>>(int, T2, T3) & 278.849 & 171.000 & 12.100 & False \\
+medium & 256 & ampere\_sgemm\_128x64\_tn & 236.187 & 169.000 & 74.751 & ampere\_sgemm\_128x64\_tn & 238.069 & 169.000 & 25.244 & True \\
+medium & 512 & ampere\_sgemm\_128x64\_tn & 427.232 & 168.000 & 56.372 & ampere\_sgemm\_128x64\_tn & 430.421 & 168.000 & 18.250 & True \\
+\bottomrule
+\end{tabular}

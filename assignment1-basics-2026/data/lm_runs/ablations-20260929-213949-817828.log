@@ -1,0 +1,13 @@
+START 1/6 no-rmsnorm-lr1e-3
+END no-rmsnorm-lr1e-3: completed
+START 2/6 post-norm
+END post-norm: completed
+START 3/6 no-rope
+END no-rope: completed
+START 4/6 silu
+END silu: completed
+START 5/6 no-rmsnorm-lr3e-4
+END no-rmsnorm-lr3e-4: completed
+START 6/6 no-rmsnorm-lr1e-4
+END no-rmsnorm-lr1e-4: completed
+QUEUE finished: /Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/ablations-20260929-213949-817828/REPORT.md

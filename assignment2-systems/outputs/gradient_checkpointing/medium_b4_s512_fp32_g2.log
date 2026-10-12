@@ -1,0 +1,8 @@
+M(C)=8.000000 MiB，M(B)=360.890625 MiB
+本进程测一组：每段 2 个 block，共 12 段
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/autograd/graph.py:869: UserWarning: Unsupported unwinding pattern: unknown op code 0x8 (Triggered internally at /pytorch/torch/csrc/profiler/unwind/unwind.cpp:216.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+显存快照：/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g2.pickle
+理论总峰值估计=3.825348 GiB
+实测完整前向/反向峰值=3.978786 GiB
+已保存结果：/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g2

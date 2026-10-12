@@ -1,0 +1,4 @@
+marker,time_s,memory_bytes,memory_mib
+before_forward,4.005655372,97263616,92.7578125
+after_forward,4.033670789,879599616,838.8515625
+after_backward,4.126021615,160184320,152.763671875

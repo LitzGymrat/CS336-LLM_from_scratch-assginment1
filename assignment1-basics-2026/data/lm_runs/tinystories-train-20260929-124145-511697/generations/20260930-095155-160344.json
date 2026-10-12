@@ -1,0 +1,22 @@
+{
+  "prompt": "Miles,don't worry,everything is gonna be OK.Someone would love u just because u are u.",
+  "temperature": 0.8,
+  "top_p": 0.9,
+  "max_new_tokens": 256,
+  "seed": 42,
+  "checkpoint": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/lm_runs/tinystories-train-20260929-124145-511697/checkpoint.pt",
+  "iteration": 5000,
+  "tokenizer_dir": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-193145-068347-multiprocess-8p-8c-train-10000-baseline",
+  "device": "mps",
+  "context_len": 256,
+  "prompt_token_count": 26,
+  "generated_token_count": 2,
+  "stopped_on_eos": true,
+  "generation_seconds": 0.11726620799163356,
+  "generated_token_ids": [
+    10,
+    256
+  ],
+  "completion": "\n<|endoftext|>",
+  "full_text": "Miles,don't worry,everything is gonna be OK.Someone would love u just because u are u.\n<|endoftext|>"
+}

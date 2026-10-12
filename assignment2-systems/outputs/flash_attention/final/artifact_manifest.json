@@ -1,0 +1,17 @@
+{
+  "pytest.log": "d6fd3389c792421acbae67aa719debee68a5901a978caba60f11a23872e4c7f7",
+  "pytest.xml": "ca23ca31ee813ca281b7d0b19838714b0230dc406ded67fa3b225566064c1e66",
+  "run.log": "5a5cbfc04a32d304c2cb8dfcf003a0c60917a4528a7b0667b8a6ecaf3a2e7088",
+  "benchmark.csv": "5fb3719fac86f4be75660c0e13eacac67c138c2c2125325b466fe071fdf0dd29",
+  "benchmark.tex": "168701dae7bbd9b20498c54c8e4e26f8c333a245248f1a498bf8329c114596de",
+  "benchmark.typ": "66802f36a3be6f35a9b5e440376bb7b0170d5384d186f6b648c4262e10fd24b8",
+  "benchmark.json": "6efd78cad4cfb8659f088e400f70ee831b861448f3700c43f4ec3bc9a023fe0d",
+  "source_changes.diff": "e21cbfcd138fb26f6c628090fa8c6f5508ce4b80324e2ce00cf3bd609c3c3961",
+  "summary.csv": "1488ceaae82cb54e3c68483425ca48df9ab266ea944a26ae1f893b09755eaf09",
+  "summary.tex": "5c81d1941b81be48198b8035a3fa0b4428e68ecda2cf0e4a0a8a4fdfc62254cb",
+  "summary.typ": "99be172487c69a3769affbafa69936dd799ee3bd2765ba0330a681a3306e1bb4",
+  "source_snapshot/report_flash_attention.py": "5621b15046e234b6a303717216f4fbcdb506524d55ee6c398a5fcce905911283",
+  "source_snapshot/cs336_systems/benchmark_flash_attention.py": "5ab05359a734e0feb73d7329006d9b9c8a0c3b4efa31b950746ea037c3800054",
+  "source_snapshot/cs336_systems/flash_attention2_triton.py": "c6531679748c78e1155fdb5ace6ab784fb2c2a46ce1512985ab9091c199ccd88",
+  "source_snapshot/cs336_systems/reporting.py": "4bada68f7770b979031f16d3c91c58756d0518dba86a24e1ac81ed551efc1ee9"
+}

@@ -1,0 +1,94 @@
+{
+  "dataset": "tinystories_valid",
+  "input_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/TinyStoriesV2-GPT4-valid.txt",
+  "input_bytes": 22502601,
+  "input_sha256": "6874bae9a4c1a4e7edcf0e53b86c17817e9cf881fc75ff2368da457b80c0585d",
+  "model_directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-193145-068347-multiprocess-8p-8c-train-10000-baseline",
+  "output_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/tinystories_valid.npy",
+  "output_bytes": 10931894,
+  "dtype": "uint16",
+  "shape": [
+    5465883
+  ],
+  "token_count": 5465883,
+  "special_token_count": 27630,
+  "min_id": 10,
+  "max_id": 9999,
+  "bytes_per_token": 4.116919626709902,
+  "encoding_wall_seconds": 3.7669555828906596,
+  "total_seconds": 3.8137371669290587,
+  "end_to_end_bytes_per_second": 5900406.424933451,
+  "payload_sha256": "5831fc18b035d8c133665d2af7bca926be6c401d195c0ad272554a5711cdc04d",
+  "all_chunks_roundtrip_and_match_reference": true,
+  "all_boundaries_at_special_tokens": true,
+  "processes": 8,
+  "target_chunk_bytes": 4194304,
+  "chunks": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 3751213,
+      "input_bytes": 3751213,
+      "token_count": 911486,
+      "special_token_count": 4620,
+      "min_id": 10,
+      "max_id": 9998,
+      "encode_seconds": 3.303787166951224
+    },
+    {
+      "index": 1,
+      "start": 3751213,
+      "end": 7501211,
+      "input_bytes": 3749998,
+      "token_count": 910845,
+      "special_token_count": 4586,
+      "min_id": 10,
+      "max_id": 9999,
+      "encode_seconds": 3.2969735409133136
+    },
+    {
+      "index": 2,
+      "start": 7501211,
+      "end": 11252559,
+      "input_bytes": 3751348,
+      "token_count": 910307,
+      "special_token_count": 4645,
+      "min_id": 10,
+      "max_id": 9998,
+      "encode_seconds": 3.23441370902583
+    },
+    {
+      "index": 3,
+      "start": 11252559,
+      "end": 15002188,
+      "input_bytes": 3749629,
+      "token_count": 910301,
+      "special_token_count": 4631,
+      "min_id": 10,
+      "max_id": 9997,
+      "encode_seconds": 3.1842400409514084
+    },
+    {
+      "index": 4,
+      "start": 15002188,
+      "end": 18752209,
+      "input_bytes": 3750021,
+      "token_count": 911381,
+      "special_token_count": 4593,
+      "min_id": 10,
+      "max_id": 9999,
+      "encode_seconds": 3.224858417059295
+    },
+    {
+      "index": 5,
+      "start": 18752209,
+      "end": 22502601,
+      "input_bytes": 3750392,
+      "token_count": 911563,
+      "special_token_count": 4555,
+      "min_id": 10,
+      "max_id": 9998,
+      "encode_seconds": 3.3319417500169948
+    }
+  ]
+}

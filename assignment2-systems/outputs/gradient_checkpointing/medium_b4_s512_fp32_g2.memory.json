@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "profile_phase": "measurement",
+  "measurement_start_allocated_bytes": 1891975168,
+  "peak_allocated_bytes": 4272189440,
+  "peak_reserved_bytes": 4441767936,
+  "snapshot_path": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_g2.pickle"
+}

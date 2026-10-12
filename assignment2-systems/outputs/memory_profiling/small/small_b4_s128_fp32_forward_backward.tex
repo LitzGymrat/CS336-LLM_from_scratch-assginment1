@@ -1,0 +1,7 @@
+\begin{tabular}{rrrrrrrrlllrrrlrlrlrrrrllrrrllrr}
+\toprule
+vocab\_size & d\_model & d\_ff & num\_layers & num\_heads & rope\_theta & batch\_size & seq\_len & device & precision & parameter\_dtype & autocast & tf32\_matmul & seed & norm\_position & use\_rope & ffn\_type & lr & mode & warmup & steps & memory\_profile & inference & status & profile\_phase & measurement\_start\_allocated\_bytes & peak\_allocated\_bytes & peak\_reserved\_bytes & snapshot\_path & stage & mean\_ms & std\_ms \\
+\midrule
+10000 & 768 & 3072 & 12 & 12 & 10000.000 & 4 & 128 & cuda & torch.float32 & torch.float32 & False & False & 0 & pre & True & swiglu & 0.001 & forward\_backward & 1 & 2 & True & False & ok & measurement & 1062762496 & 1292941312 & 1369440256 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_fp32\_forward\_backward.pickle & total & 48.412 & 0.644 \\
+\bottomrule
+\end{tabular}

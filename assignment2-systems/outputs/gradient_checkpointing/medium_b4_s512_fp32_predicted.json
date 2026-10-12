@@ -1,0 +1,79 @@
+{
+  "config": {
+    "d_model": 1024,
+    "d_ff": 4096,
+    "num_layers": 24,
+    "num_heads": 16,
+    "batch_size": 4,
+    "context_len": 512,
+    "rope_theta": 10000.0,
+    "warmup": 1,
+    "seed": 0,
+    "group_size": null,
+    "output_prefix": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_predicted"
+  },
+  "scope": "independent Transformer blocks; forward/backward including recomputation; no optimizer, embedding or LM head",
+  "measured_strategy_count": 1,
+  "precision": "torch.float32",
+  "use_reentrant": false,
+  "nested": false,
+  "compiled": false,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "parameter_bytes": 1610809344,
+  "parameter_gradient_bytes": 1610809344,
+  "input_gradient_bytes": 8388608,
+  "buffer_bytes": 3145728,
+  "single_checkpoint_bytes": 8388608,
+  "single_block_internal_saved_bytes": 378421248,
+  "single_block_saved_storage_count": 25,
+  "continuous_optimal_checkpoint_count": 32.903979622531985,
+  "selected_theory": {
+    "group_size": 1,
+    "checkpoint_count": 24,
+    "checkpoint_bytes": 201326592,
+    "recomputed_internal_bytes": 378421248,
+    "activation_estimate_bytes": 579747840,
+    "total_estimate_bytes": 3829678080
+  },
+  "predicted_optimum": {
+    "group_size": 1,
+    "checkpoint_count": 24,
+    "checkpoint_bytes": 201326592,
+    "recomputed_internal_bytes": 378421248,
+    "activation_estimate_bytes": 579747840,
+    "total_estimate_bytes": 3829678080
+  },
+  "theory_fixed_bytes": 3249930240,
+  "forward_end_allocated_bytes": 2093301760,
+  "forward_peak_allocated_bytes": 2387562496,
+  "backward_end_allocated_bytes": 3519561728,
+  "elapsed_ms": 313.46187368035316,
+  "memory": {
+    "status": "ok",
+    "profile_phase": "measurement",
+    "measurement_start_allocated_bytes": 1891975168,
+    "peak_allocated_bytes": 3952496640,
+    "peak_reserved_bytes": 4171235328,
+    "snapshot_path": "/root/autodl-tmp/cs336/assignment2-systems/outputs/gradient_checkpointing/medium_b4_s512_fp32_predicted.pickle"
+  },
+  "checks": {
+    "all_parameter_gradients_present": true,
+    "all_gradients_finite": true,
+    "fp32_gradient_bytes_match_parameters": true
+  },
+  "transformer_source_sha256": {
+    "Embedding_module.py": "8295e87789285fada02da482bf6a14a647ea11a2261dd9f23d24be2e42c3e515",
+    "Linear_module.py": "f15a0c7e72a1be3f355125751b59c834dbbda083e34066a79c1554d9bf610aea",
+    "Multihead_self_attention_module.py": "26df5539695b56ff232bbdf9875578284956a528abab84875bc98de0d56bf1eb",
+    "RMSNorm_module.py": "e67f6757016dc1ad0ebf3520d50eb39ca0dc5128efd34d4a4ced79f07152fffa",
+    "RoPE_module.py": "c1679d91bc908447b72e82ede2c68a4f80017a710ac61e6f6c963eaadb213a09",
+    "Scaled_dot_product_function.py": "6b67baf076af4f9433ca79f94a14abc9acdb3c005bdbd86a936691c5128f5fd5",
+    "SoftMax_function.py": "d40686226b0035dd5bc66d745e7c840628c1f08124d86be4e2fe4d8b2f0815e1",
+    "Swiglu_module.py": "9ceeb9459439756812ba56c8b86ef9e4250888b01ae042f89c2b319e3885eb4d",
+    "Transformer_block.py": "707fa12727243df3f39eeaf840425e04be914c1e3a63f3c273c19ceeee67d1a5",
+    "Transformer_lm.py": "f171570d94fb2fde1c48065cd61e2264940fd7bb086d65c71d3399fce7537390"
+  },
+  "harness_sha256": "ea05d0bb183e2d5b06f99019df811f35e461d1f4bc996e7f32dd59da738e7fe9"
+}

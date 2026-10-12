@@ -1,0 +1,104 @@
+{
+  "pid": 85892,
+  "state": "finished",
+  "experiments": [
+    {
+      "name": "no-rmsnorm-lr1e-3",
+      "state": "completed",
+      "started_at": "2026-09-29T21:39:50.694404+08:00",
+      "pid": 85911,
+      "returncode": 0,
+      "finished_at": "2026-09-29T23:00:11.581789+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 4803.880205666006,
+        "train_loss": 1.5390996932983398,
+        "valid_loss": 1.7400079369544983,
+        "lr": 0.0001,
+        "tokens_seen": 40960000
+      }
+    },
+    {
+      "name": "post-norm",
+      "state": "completed",
+      "started_at": "2026-09-29T23:00:13.175347+08:00",
+      "pid": 87764,
+      "returncode": 0,
+      "finished_at": "2026-09-30T00:26:43.172322+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 5174.440475624986,
+        "train_loss": 1.522070288658142,
+        "valid_loss": 1.7281108498573303,
+        "lr": 0.0001,
+        "tokens_seen": 40960000
+      }
+    },
+    {
+      "name": "no-rope",
+      "state": "completed",
+      "started_at": "2026-09-30T00:26:49.176523+08:00",
+      "pid": 88888,
+      "returncode": 0,
+      "finished_at": "2026-09-30T01:47:01.229205+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 4803.922563292028,
+        "train_loss": 1.6192117929458618,
+        "valid_loss": 1.8185600340366364,
+        "lr": 0.0001,
+        "tokens_seen": 40960000
+      }
+    },
+    {
+      "name": "silu",
+      "state": "completed",
+      "started_at": "2026-09-30T01:47:03.513205+08:00",
+      "pid": 89703,
+      "returncode": 0,
+      "finished_at": "2026-09-30T03:13:37.930173+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 5178.600091665983,
+        "train_loss": 1.5500116348266602,
+        "valid_loss": 1.7510299384593964,
+        "lr": 0.0001,
+        "tokens_seen": 40960000
+      }
+    },
+    {
+      "name": "no-rmsnorm-lr3e-4",
+      "state": "completed",
+      "started_at": "2026-09-30T03:13:40.184436+08:00",
+      "pid": 90800,
+      "returncode": 0,
+      "finished_at": "2026-09-30T04:34:09.653711+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 4813.5237134160125,
+        "train_loss": 1.7221412658691406,
+        "valid_loss": 1.9337626695632935,
+        "lr": 2.9999999999999997e-05,
+        "tokens_seen": 40960000
+      }
+    },
+    {
+      "name": "no-rmsnorm-lr1e-4",
+      "state": "completed",
+      "started_at": "2026-09-30T04:34:11.627281+08:00",
+      "pid": 91859,
+      "returncode": 0,
+      "finished_at": "2026-09-30T05:54:49.290878+08:00",
+      "last_metrics": {
+        "step": 5000,
+        "wall_seconds": 4822.703366749978,
+        "train_loss": 2.0950751304626465,
+        "valid_loss": 2.3236554861068726,
+        "lr": 1e-05,
+        "tokens_seen": 40960000
+      }
+    }
+  ],
+  "report_exit_code": 0,
+  "finished_at": "2026-09-30T05:54:51.311793+08:00"
+}

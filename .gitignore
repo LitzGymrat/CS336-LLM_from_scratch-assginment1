@@ -9,8 +9,24 @@ wheels/
 # Virtual environments
 .venv
 
-data/
+/data/
+/assignment1-basics/data/
 *.npy
 *.pt
 *.pth
 *.pkl
+# Local caches, credentials and large profiling artifacts
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+wandb/
+.env
+.env.*
+*.nsys-rep
+*.sqlite
+*.pickle
+*.zip
+*.safetensors
+
+# Small official test fixtures are part of the reproducible checkout
+!**/tests/fixtures/*.pt

@@ -1,0 +1,5 @@
+d_model=128, seq_len=8192
+/root/autodl-tmp/cs336/assignment2-systems/.venv/lib/python3.12/site-packages/torch/autograd/graph.py:869: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:335.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  首次前向+反向（含编译，如开启）：652.086 ms
+  status=ok, forward=30.44049609452486 ms, backward=74.21790987253189 ms, phase=complete

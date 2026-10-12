@@ -1,0 +1,17 @@
+\begin{tabular}{lrrllrrrllrrrlrr}
+\toprule
+model & batch\_size & seq\_len & precision & mode & inference & warmup & steps & status & profile\_phase & measurement\_start\_allocated\_bytes & peak\_allocated\_bytes & peak\_reserved\_bytes & snapshot\_path & peak\_allocated\_gib & peak\_reserved\_gib \\
+\midrule
+small & 4 & 128 & fp32 & forward & True & 1 & 2 & ok & measurement & 524897280 & 556354560 & 614465536 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_fp32\_forward.pickle & 0.518 & 0.572 \\
+small & 4 & 128 & fp32 & forward\_backward & False & 1 & 2 & ok & measurement & 1062762496 & 1292941312 & 1369440256 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_fp32\_forward\_backward.pickle & 1.204 & 1.275 \\
+small & 4 & 128 & fp32 & train & False & 1 & 2 & ok & measurement & 2099957760 & 2352484352 & 2596274176 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_fp32\_train.pickle & 2.191 & 2.418 \\
+small & 4 & 128 & bf16 & forward & True & 1 & 2 & ok & measurement & 524897280 & 815000576 & 864026624 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_bf16\_forward.pickle & 0.759 & 0.805 \\
+small & 4 & 128 & bf16 & forward\_backward & False & 1 & 2 & ok & measurement & 1062500352 & 1280005120 & 1369440256 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_bf16\_forward\_backward.pickle & 1.192 & 1.275 \\
+small & 4 & 128 & bf16 & train & False & 1 & 2 & ok & measurement & 2099826688 & 2347871232 & 2596274176 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s128\_bf16\_train.pickle & 2.187 & 2.418 \\
+small & 4 & 1024 & fp32 & forward & True & 1 & 2 & ok & measurement & 527707136 & 1398230016 & 1522532352 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s1024\_fp32\_forward.pickle & 1.302 & 1.418 \\
+small & 4 & 1024 & fp32 & forward\_backward & False & 1 & 2 & ok & measurement & 1063884800 & 10665379840 & 11318329344 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s1024\_fp32\_forward\_backward.pickle & 9.933 & 10.541 \\
+small & 4 & 1024 & fp32 & train & False & 1 & 2 & ok & measurement & 2103275520 & 11708538880 & 12419334144 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s1024\_fp32\_train.pickle & 10.904 & 11.566 \\
+small & 4 & 1024 & bf16 & forward & True & 1 & 2 & ok & measurement & 527707136 & 1421167616 & 1505755136 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s1024\_bf16\_forward.pickle & 1.324 & 1.402 \\
+small & 4 & 1024 & bf16 & forward\_backward & False & 1 & 2 & ok & measurement & 1057077248 & 8116054016 & 8833204224 & /root/autodl-tmp/cs336/assignment2-systems/outputs/memory\_profiling/small/small\_b4\_s1024\_bf16\_forward\_backward.pickle & 7.559 & 8.227 \\
+\bottomrule
+\end{tabular}

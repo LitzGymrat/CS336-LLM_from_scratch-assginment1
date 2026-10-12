@@ -1,0 +1,124 @@
+{
+  "started_at": "2026-09-16T13:00:25.537932+08:00",
+  "implementation_sha256": "04896e90d5ffd5a8a35bf009a267b78e5d9b270da47390fe8e3e10e64a79c13f",
+  "model_artifacts": {
+    "tinystories": {
+      "directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-193145-068347-multiprocess-8p-8c-train-10000-baseline",
+      "vocab_sha256": "f51315e2f1b6fd2148a02d8237e8865c4e40d70a23d655710f98133bd3bfae79",
+      "merges_sha256": "04a45674869008c6ccb7ec70ea333110cf81052f692954530d3fa8904c454aac"
+    },
+    "owt": {
+      "directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-212155-070170-multiprocess-8p-128c-owt-train-32000-baseline",
+      "vocab_sha256": "d579c23aac60baa0167c53bed5ee4fda2137390d788559b11b8fb41a1a8496cf",
+      "merges_sha256": "ea0b685677c5e4d311679412415c56c39d669935aacc9902676fc7538df7901b"
+    }
+  },
+  "policy": "Preserve source bytes, document order, whitespace and endoftext. Chunk only at document markers. Save user Tokenizer IDs; independently check every chunk with tiktoken and decode roundtrip.",
+  "datasets": {
+    "tinystories_valid": {
+      "dataset": "tinystories_valid",
+      "input_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/TinyStoriesV2-GPT4-valid.txt",
+      "input_bytes": 22502601,
+      "input_sha256": "6874bae9a4c1a4e7edcf0e53b86c17817e9cf881fc75ff2368da457b80c0585d",
+      "model_directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-193145-068347-multiprocess-8p-8c-train-10000-baseline",
+      "output_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/tinystories_valid.npy",
+      "output_bytes": 10931894,
+      "dtype": "uint16",
+      "shape": [
+        5465883
+      ],
+      "token_count": 5465883,
+      "special_token_count": 27630,
+      "min_id": 10,
+      "max_id": 9999,
+      "bytes_per_token": 4.116919626709902,
+      "encoding_wall_seconds": 3.7669555828906596,
+      "total_seconds": 3.8137371669290587,
+      "end_to_end_bytes_per_second": 5900406.424933451,
+      "payload_sha256": "5831fc18b035d8c133665d2af7bca926be6c401d195c0ad272554a5711cdc04d",
+      "all_chunks_roundtrip_and_match_reference": true,
+      "all_boundaries_at_special_tokens": true,
+      "processes": 8,
+      "target_chunk_bytes": 4194304
+    },
+    "owt_valid": {
+      "dataset": "owt_valid",
+      "input_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/owt_valid.txt",
+      "input_bytes": 289998753,
+      "input_sha256": "2406f278e71829d273b315e9b403285baea7022b26a96d2728dd8b776ea40660",
+      "model_directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-212155-070170-multiprocess-8p-128c-owt-train-32000-baseline",
+      "output_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/owt_valid.npy",
+      "output_bytes": 132802324,
+      "dtype": "uint16",
+      "shape": [
+        66401098
+      ],
+      "token_count": 66401098,
+      "special_token_count": 59059,
+      "min_id": 10,
+      "max_id": 31999,
+      "bytes_per_token": 4.367378879789006,
+      "encoding_wall_seconds": 57.74291499995161,
+      "total_seconds": 58.387904791045,
+      "end_to_end_bytes_per_second": 4966760.715192966,
+      "payload_sha256": "644d6bb54a0fe0e9e9605e60a7b904967b50e25d22d32aa20e9cfb343283e577",
+      "all_chunks_roundtrip_and_match_reference": true,
+      "all_boundaries_at_special_tokens": true,
+      "processes": 8,
+      "target_chunk_bytes": 4194304
+    },
+    "tinystories_train": {
+      "dataset": "tinystories_train",
+      "input_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/TinyStoriesV2-GPT4-train.txt",
+      "input_bytes": 2227753162,
+      "input_sha256": "6418d412de72888f52b5142c761ac21a582f7d1166f0bfbdb5f03ccfdec90443",
+      "model_directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-193145-068347-multiprocess-8p-8c-train-10000-baseline",
+      "output_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/tinystories_train.npy",
+      "output_bytes": 1082458822,
+      "dtype": "uint16",
+      "shape": [
+        541229347
+      ],
+      "token_count": 541229347,
+      "special_token_count": 2717699,
+      "min_id": 9,
+      "max_id": 9999,
+      "bytes_per_token": 4.116098238848826,
+      "encoding_wall_seconds": 372.6431196249323,
+      "total_seconds": 376.53880154096987,
+      "end_to_end_bytes_per_second": 5916397.331819953,
+      "payload_sha256": "9ef3250b31cf6ab174cd42d2cf31fc70d451012e913b417faaa47a5b9f1e150b",
+      "all_chunks_roundtrip_and_match_reference": true,
+      "all_boundaries_at_special_tokens": true,
+      "processes": 8,
+      "target_chunk_bytes": 4194304
+    },
+    "owt_train": {
+      "dataset": "owt_train",
+      "input_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/owt_train.txt",
+      "input_bytes": 11920511059,
+      "input_sha256": "bbeb7f291a981ecfd5cf44b84d0f654b9e96c53dff99f2556b7d2cccaf8c1918",
+      "model_directory": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/bpe_benchmarks/20260915-212155-070170-multiprocess-8p-128c-owt-train-32000-baseline",
+      "output_path": "/Users/mileszhu/Documents/个人项目/cs336/assignment1-basics/data/tokenized/20260916-user-bpe/owt_train.npy",
+      "output_bytes": 5454241032,
+      "dtype": "uint16",
+      "shape": [
+        2727120452
+      ],
+      "token_count": 2727120452,
+      "special_token_count": 2399397,
+      "min_id": 10,
+      "max_id": 31999,
+      "bytes_per_token": 4.37109811202428,
+      "encoding_wall_seconds": 2325.6536778750597,
+      "total_seconds": 2348.6179741249653,
+      "end_to_end_bytes_per_second": 5075542.803742185,
+      "payload_sha256": "e736315eb244aa6adbbceea6ab0651cc544bc094adc4071763c97e99c241ca6c",
+      "all_chunks_roundtrip_and_match_reference": true,
+      "all_boundaries_at_special_tokens": true,
+      "processes": 8,
+      "target_chunk_bytes": 4194304
+    }
+  },
+  "completed_at": "2026-09-16T13:46:53.208855+08:00"
+}

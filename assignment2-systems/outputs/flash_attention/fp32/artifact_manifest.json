@@ -1,0 +1,10 @@
+{
+  "run.log": "64b2dc55671c58ee56bd7a3ee2b92469a6b2076e46951565202ba2b61d9fe820",
+  "benchmark.csv": "5da727dbd64d9dcd5eec38beb41b0fdeb83de9e3a2e808f67e1fbf063418e344",
+  "benchmark.tex": "90aa5f6bbda5ae92394a031a5f14bedd22e1924ed8bbe41d63a58f30ff524170",
+  "benchmark.typ": "46fa43687f05f11e0fcda9aa71ba408c4e3feeaf04c93b9913e05a4765055b49",
+  "benchmark.json": "4a5b293fff1bafa510bcbd1550a7c8d5d559b1050db255b51a9561ee7df21373",
+  "source_snapshot/cs336_systems/benchmark_flash_attention.py": "5ab05359a734e0feb73d7329006d9b9c8a0c3b4efa31b950746ea037c3800054",
+  "source_snapshot/cs336_systems/flash_attention2_triton.py": "cf50b5c8764da357c867cd5ce5d9cacaac65cef4eafe1b47aa8e591df91f3eca",
+  "source_snapshot/cs336_systems/reporting.py": "4bada68f7770b979031f16d3c91c58756d0518dba86a24e1ac81ed551efc1ee9"
+}
